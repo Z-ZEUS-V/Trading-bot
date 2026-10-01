@@ -1,0 +1,26 @@
+{
+  "market_analyst": {
+    "id": "agent_14e3a67d67c5450084c047e61c686b7ded255df471c1466385",
+    "model": "gpt-6-luna",
+    "action": "created",
+    "name": "Astra Live Market Analyst"
+  },
+  "backtest_risk_reviewer": {
+    "id": "agent_ad534cfc02ef4750adb417fa5bcef25b4a6c92709fda44eca7",
+    "model": "gpt-6-luna",
+    "action": "created",
+    "name": "Astra Backtest and Risk Reviewer"
+  },
+  "research_curator": {
+    "id": "agent_b32cd8d970e8475295a9b760c5059fcb689dde2a6dec49d59f",
+    "model": "gpt-6-luna",
+    "action": "created",
+    "name": "Astra Strategy Research Curator"
+  },
+  "astra_coordinator": {
+    "id": "agent_0c6cf59a3e95405b8c5cf839a3ab36720b7fdf0c528748e6ba",
+    "model": "gpt-6-astra",
+    "action": "created",
+    "name": "Astra Real-Time Futures Decision Analyst"
+  }
+}
