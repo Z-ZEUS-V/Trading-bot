@@ -1,13 +1,19 @@
 # Astra Trading Research and Bot Blueprint
 
-Proyecto de investigación de estrategias algorítmicas con agentes OpenAI. Revisa el README local y la carpeta docs para conocer los prompts, el flujo de agentes y la biblioteca de estrategias.
+Starter project for the strategy research workflow and four OpenAI API agents.
 
-Incluye informes de investigación, catálogo JSON, base SQLite, scripts y prompts. Configura OPENAI_API_KEY localmente; nunca la subas al repositorio. El bot aún no se conecta a un exchange ni envía órdenes.
+## Contents
 
-## Instalación
+- `data/strategies.json`: strategy catalog.
+- `data/astra_research.sqlite3`: searchable local library.
+- `data/research_runs/`: sourced research reports.
+- `data/platform_agent_specs.json`: agent instructions; `data/platform_agents.json`: saved agent IDs.
+- `docs/`: prompts, architecture, API setup guide, and exchange universe notes.
+- `scripts/`: create agent profiles and run research/selection sessions.
+- `src/astra_research/`: catalog and CLI package.
 
-Requiere Python 3.11 o posterior. Instala el proyecto con `pip install -e .`.
+## Setup
 
-## Seguridad
+Requires Python 3.11+. Install with `pip install -e .`. Keep `OPENAI_API_KEY` in a local environment variable; never commit secrets.
 
-Mantén las claves API en variables de entorno y usa permisos mínimos. Valida backtests con costes y paper trading antes de cualquier despliegue.
+The project does not yet connect to an exchange or place orders. It defines the agent workflow and research library; the market data adapter, backtesting engine, and bot dispatcher remain to be built. Validate strategies with realistic costs, out-of-sample tests, and paper trading before deployment.
