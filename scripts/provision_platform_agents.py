@@ -35,13 +35,18 @@ def main() -> None:
     saved = {}
     for spec in specs:
         role = spec["role"]
+        instructions = spec.get("instructions")
+        if spec.get("instructions_file"):
+            instructions = (ROOT / spec["instructions_file"]).read_text(encoding="utf-8")
+        if not instructions:
+            raise ValueError(f"No instructions configured for agent role: {role}")
         metadata = {"astra_project": PROJECT_TAG, "astra_role": role}
         config = {
             "name": spec["name"],
             "model": MODEL_BY_ROLE[role],
-            "instructions": spec["instructions"],
+            "instructions": instructions,
             "metadata": metadata,
-            "reasoning": {"effort": "low"},
+            "reasoning": {"effort": spec.get("reasoning_effort", "low")},
             "text": {"verbosity": "low"},
             "tools": spec.get("tools", []),
         }

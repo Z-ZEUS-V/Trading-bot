@@ -95,6 +95,43 @@
     "review_status": "initial_literature_map"
   },
   {
+    "id": "crypto-perp-basis-funding-carry",
+    "name": "Carry de basis y funding en perpetuos cripto",
+    "family": "carry",
+    "markets": [
+      "crypto"
+    ],
+    "horizons": [
+      "intraday",
+      "daily",
+      "weekly"
+    ],
+    "mechanism": "Mide basis, funding realizado y costes para evaluar carry; una variante neutral al delta combina spot largo y perpetuo corto cuando el carry neto esperado compensa los riesgos y costes.",
+    "benefit_potential": 3,
+    "market_risk": 4,
+    "tail_risk": 5,
+    "implementation_risk": 4,
+    "cost_sensitivity": 5,
+    "evidence_strength": 3,
+    "capital_and_infrastructure": "medium_to_high",
+    "failure_modes": [
+      "funding_reversal",
+      "basis_widening",
+      "margin_spike",
+      "liquidation",
+      "spot_perp_hedge_mismatch",
+      "venue_and_custody_risk",
+      "fees_and_rebalancing_costs"
+    ],
+    "evidence_summary": "Estudios del BIS y de futuros perpetuos documentan carry/basis y primas históricas variables; el carry alto coincide con riesgo de crash y liquidación. Es una hipótesis separada que exige precios, financiación realizada, costes y riesgo de margen; no implica arbitraje sin riesgo ni valida rentabilidad futura.",
+    "sources": [
+      "https://www.bis.org/publications/working-paper-1087-crypto-carry",
+      "https://doi.org/10.1002/fut.22425",
+      "https://www.research.ed.ac.uk/en/publications/anatomy-of-cryptocurrency-perpetual-futures-returns/"
+    ],
+    "review_status": "market_specific_candidate_literature_review"
+  },
+  {
     "id": "market-making",
     "name": "Market making / provisión de liquidez",
     "family": "market_making",

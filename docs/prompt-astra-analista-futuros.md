@@ -1,3 +1,7 @@
+# Prompt inicial histórico — sustituido
+
+> No usar para aprovisionar el agente Astra. Conservado como referencia de la configuración anterior. El prompt vigente, neutral respecto al exchange y enlazado por `data/platform_agent_specs.json`, es [`prompt-astra-analista-mercado.md`](prompt-astra-analista-mercado.md).
+
 # Prompt inicial de Astra: analista de datos financieros en tiempo real
 
 ```text

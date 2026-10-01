@@ -6,7 +6,11 @@ En cada consulta operativa del bot, analizar el mercado con datos recientes, con
 
 Los perfiles en OpenAI son agentes de análisis, no una fuente de precios ni un motor de backtesting. Antes de usar el flujo en vivo, el bot debe conectar un proveedor de datos de mercado y un motor determinista de backtests.
 
-El venue definido es **Bitunix**. El universo solicitado es top 10 cripto por capitalización (ranking externo y dinámico), Stock Perps grandes, y oro, plata y crudo. Consultar [universo y limitaciones de Bitunix](bitunix-universe.md) antes de integrar. Bitunix actualmente indica que Stock Perps no admite trading por API; esos símbolos quedan solo para análisis hasta que el soporte oficial cambie.
+Alcance actual por decisión del usuario: **solo cripto mediante Kraken Derivatives para la primera fase**. No hay conexión implementada y el catálogo de contratos/activos ejecutables debe validarse por API para la cuenta española antes de desarrollar el conector. Renta variable, materias primas y brokers quedan aparcados. DeFi se estudia como alternativa experimental; por ahora no se ha elegido ni aprobado ningún protocolo DeFi y solo se contempla testnet/paper mientras se resuelven los requisitos regulatorios y de seguridad de `analisis-defi-kraken-espana.md`.
+
+El usuario ha elegido como referencia de priorización el resultado de selección de estrategias de Astra ejecutado con razonamiento `high`. Su propósito es ordenar investigación y backtests; no implica validación rentable ni que el modelo deba ejecutarse en `high` en cada decisión operativa. La lista debe volver a filtrarse para la aplicación concreta a cripto-perpetuos de Kraken antes del backtest.
+
+**Regla de aprobación del usuario:** durante la fase de implementación, solicitar confirmación explícita antes de ejecutar cualquier llamada de modelo configurada con razonamiento `high`; esperar la confirmación antes de proceder. Esta regla no autoriza por sí sola llamadas nuevas con `high` por el hecho de que el ranking histórico se haya generado con ese nivel.
 
 ## Perfiles de agentes
 
@@ -34,7 +38,7 @@ Motor local calcula indicadores y consulta backtests versionados
  JSON: candidato o abstención + evidencia + límites
 ```
 
-Los dos análisis especialistas pueden correr en paralelo. El bot adjunta después sus resultados a la sesión de Astra. El investigador solo corre cuando falta cobertura de evidencia o cuando se solicite una actualización. El bot debe consumir los canales públicos de Bitunix apropiados para velas, precio, profundidad y operaciones; marcar cada barra como abierta/cerrada. El top 10 por market cap requiere un proveedor externo. El conector es función de la aplicación/bot; no está incluido en los perfiles API y aún no hay código conectado a Bitunix.
+Los dos análisis especialistas pueden correr en paralelo. El bot adjunta después sus resultados a la sesión de Astra. El investigador solo corre cuando falta cobertura de evidencia o cuando se solicite una actualización. El adaptador deberá consumir los canales autorizados del proveedor elegido para velas, precio, profundidad y operaciones; marcar cada barra como abierta/cerrada. Si se requiere top 10 por capitalización, hará falta un proveedor externo y conservar la composición histórica punto en el tiempo. El conector es función de la aplicación/bot; no está incluido en los perfiles API y aún no hay código conectado a un mercado.
 
 ## Contrato mínimo de datos
 
@@ -53,6 +57,7 @@ Si faltan elementos necesarios, Astra reporta `INSUFFICIENT_DATA` o `STALE_DATA`
 
 - `data/strategies.json` y `data/astra_research.sqlite3`: catálogo de familias, evidencia y fuentes.
 - `data/research_runs/`: informes del investigador para revisión y curación.
+- `data/research_runs/session_cache/`: registros locales de resultados, prompt hash y usage de Agents API; únicamente las selecciones estáticas admiten reutilización exacta.
 - `data/platform_agent_specs.json`: instrucciones versionadas para los perfiles API.
 - `data/platform_agents.json`: IDs de perfiles creados en el proyecto API.
 - Resultados futuros de backtesting deben almacenarse versionados por estrategia y dataset, fuera del chat del modelo.
@@ -69,11 +74,11 @@ No guardar claves API en estos archivos ni en Git. La biblioteca no es entrenami
 
 ## Fases
 
-1. Crear y guardar los cuatro perfiles API con estas instrucciones.
-2. Integrar un proveedor de datos compatible con los mercados elegidos y el motor local de backtests.
-3. Construir la aplicación del bot que llama a los dos especialistas en paralelo y pasa sus informes a Astra.
-4. Validar con datos históricos, pruebas walk-forward y paper trading.
-5. Una integración de ejecución con broker, si se construye más adelante, debe ser una fase aparte con límites duros y supervisión humana.
+1. Mantener los cuatro perfiles API y usar la selección `high` ya registrada como prior de investigación, adaptando hipótesis al alcance cripto/Kraken.
+2. Verificar universo, contratos, datos históricos, funding y permisos accesibles para la cuenta española; no asumir disponibilidad antes de comprobar API y condiciones vigentes.
+3. Integrar el adaptador de datos y el motor local de backtests como componentes deterministas separados de Astra.
+4. Construir la aplicación de análisis y evaluar resultados con costes, pruebas walk-forward y paper trading.
+5. Cualquier integración de ejecución real debe ser una fase posterior separada, con límites duros y supervisión humana.
 
 ## Referencias de OpenAI
 

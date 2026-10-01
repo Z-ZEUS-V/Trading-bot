@@ -17,7 +17,7 @@ Tu proyecto API → tres agentes guardados → sesión de investigación (cuando
 2. **Astra Risk Reviewer:** revisa riesgos y pruebas pendientes. Se usa de forma opcional.
 3. **Astra Strategy Selector:** usa GPT-6 Astra para comparar el catálogo y devolver una lista ordenada de 3–4 estrategias finalistas, con sus riesgos y motivos.
 
-El prompt completo para este perfil está en [`prompt-astra-analista-futuros.md`](prompt-astra-analista-futuros.md).
+El prompt persistente actual de Astra está en [`prompt-astra-analista-mercado.md`](prompt-astra-analista-mercado.md). La guía restante describe el aprovisionamiento inicial y puede contener pasos históricos que ya no aplican.
 
 La investigación y el filtro local no gastan tokens. La elección final abre una sesión de Astra. No hay conexión con broker ni envío de órdenes.
 

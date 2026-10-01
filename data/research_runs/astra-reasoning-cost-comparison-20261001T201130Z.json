@@ -1,0 +1,76 @@
+{
+  "timestamp_utc": "20261001T201130Z",
+  "model": "gpt-6-astra",
+  "persistent_agent_reasoning_effort": "medium",
+  "comparison_efforts": [
+    "medium",
+    "high"
+  ],
+  "prompt_identical": true,
+  "candidate_ids": [
+    "time-series-momentum",
+    "cross-sectional-momentum",
+    "mean-reversion",
+    "pairs-stat-arb",
+    "carry",
+    "crypto-perp-basis-funding-carry",
+    "market-making",
+    "ml-signal-ensemble"
+  ],
+  "evidence_file": "data/research_runs/astra-strategy-evidence-20261001T193242Z.md",
+  "rates_usd_per_million_tokens": {
+    "uncached_input": 10.0,
+    "cached_input": 1.0,
+    "output_including_reasoning": 50.0
+  },
+  "historical_original_medium": {
+    "session_id": "sess_0870f6501a17db48006abeba080650819995880878f81c94b7",
+    "created_at": 1790884360,
+    "usage": {
+      "input_tokens": 14259,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 2447,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 16706
+    },
+    "cost_usd": 0.26494
+  },
+  "runs": {
+    "medium": {
+      "usage": {
+        "input_tokens": 13848,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 2185,
+        "output_tokens_details": {
+          "reasoning_tokens": 105
+        },
+        "total_tokens": 16033
+      },
+      "cost_usd": 0.24773,
+      "session_id": "sess_0915b8b209873f86006abebcf1d4f481999a7587de488af06c",
+      "report_file": "astra-reasoning-cost-comparison-20261001T201130Z-medium.md"
+    },
+    "high": {
+      "usage": {
+        "input_tokens": 13848,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 3076,
+        "output_tokens_details": {
+          "reasoning_tokens": 1034
+        },
+        "total_tokens": 16924
+      },
+      "cost_usd": 0.29228,
+      "session_id": "sess_031648a244def835006abebdaff33c8198966c3314438f0271",
+      "report_file": "astra-reasoning-cost-comparison-20261001T201130Z-high.md"
+    }
+  }
+}

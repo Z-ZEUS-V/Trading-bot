@@ -20,7 +20,7 @@
   "astra_coordinator": {
     "id": "agent_0c6cf59a3e95405b8c5cf839a3ab36720b7fdf0c528748e6ba",
     "model": "gpt-6-astra",
-    "action": "created",
-    "name": "Astra Real-Time Futures Decision Analyst"
+    "action": "updated",
+    "name": "Astra Analista de Datos y Decisión de Mercado"
   }
 }
