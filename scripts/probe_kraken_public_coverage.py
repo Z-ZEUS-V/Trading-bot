@@ -20,6 +20,12 @@ RESOLUTION_SECONDS = 3600
 USER_AGENT = "AstraTradingResearch/0.1 (public market-data research)"
 TIMEOUT_SECONDS = 30
 REQUEST_PAUSE_SECONDS = 0.15
+CRYPTO_CATEGORIES = {
+    "AI", "Community", "DeFi", "DEX", "DePIN", "Gaming", "Infrastructure",
+    "Layer 1", "Layer 2", "Meme", "Privacy", "Real-world assets", "Stablecoin",
+    "Utility", "Web3",
+}
+INVERSE_CRYPTO_BASES = {"BTC", "ETH", "LTC", "XRP"}
 
 
 def _get_json(url: str) -> tuple[bytes, dict]:
@@ -158,14 +164,69 @@ def probe(symbols: list[str], days: int, chunk_days: int) -> dict:
     }
 
 
+def active_crypto_perpetual_symbols(catalog_path: Path) -> tuple[list[str], dict]:
+    payload = json.loads(catalog_path.read_text(encoding="utf-8"))
+    accepted_types = {"flexible_futures", "futures_inverse"}
+    selected = []
+    for item in payload.get("instruments", []):
+        symbol = item.get("symbol", "")
+        if (
+            isinstance(symbol, str)
+            and symbol.startswith(("PF_", "PI_"))
+            and item.get("type") in accepted_types
+            and item.get("tradeable") is True
+            and item.get("isExpired") is not True
+            and item.get("tradfi") is not True
+            and item.get("expiry") in (None, "")
+            and (
+                item.get("category") in CRYPTO_CATEGORIES
+                or (
+                    item.get("category") in (None, "")
+                    and symbol.startswith("PI_")
+                    and item.get("base") in INVERSE_CRYPTO_BASES
+                )
+            )
+        ):
+            selected.append(item)
+    selected.sort(key=lambda item: item["symbol"])
+    symbols = [item["symbol"] for item in selected]
+    criteria = {
+        "catalog": str(catalog_path),
+        "filters": [
+            "symbol starts with PF_ or PI_",
+            "type is flexible_futures or futures_inverse",
+            "tradeable is true",
+            "isExpired is not true",
+            "tradfi is not true",
+            "expiry is empty",
+            f"category is in crypto categories: {sorted(CRYPTO_CATEGORIES)}",
+            "blank category accepted only for inverse BTC/ETH/LTC/XRP contracts",
+        ],
+        "candidate_count": len(symbols),
+        "symbols": symbols,
+        "note": "Public catalog proxy for currently listed crypto perpetuals; not account eligibility or historical universe membership.",
+    }
+    return symbols, criteria
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Sondea cobertura pública de velas, funding y basis de Kraken Derivatives.")
     parser.add_argument("--symbols", default="PF_XBTUSD,PF_ETHUSD", help="Símbolos separados por coma.")
     parser.add_argument("--days", type=int, default=365, help="Días que se investigan (por defecto: 365).")
     parser.add_argument("--chunk-days", type=int, default=30, help="Tamaño acotado de cada consulta (por defecto: 30).")
     parser.add_argument("--output-dir", type=Path, default=Path("data/market_data"))
+    parser.add_argument("--all-active-crypto-perps", action="store_true", help="Deriva símbolos PF_/PI_ activos del snapshot completo del catálogo.")
+    parser.add_argument("--catalog", type=Path, default=Path("data/market_data/instruments/20261002T001640Z/response.json"))
+    parser.add_argument("--compact", action="store_true", help="Guarda resúmenes y hashes sin arrays horarios extensos.")
+    parser.add_argument("--summary-only", action="store_true", help="Imprime un resumen agregado, sin una línea por contrato.")
     args = parser.parse_args()
-    symbols = [item.strip() for item in args.symbols.split(",") if item.strip()]
+    universe = None
+    if args.all_active_crypto_perps:
+        if not args.catalog.exists():
+            parser.error(f"No se encuentra el snapshot de catálogo: {args.catalog}")
+        symbols, universe = active_crypto_perpetual_symbols(args.catalog)
+    else:
+        symbols = [item.strip() for item in args.symbols.split(",") if item.strip()]
     if not symbols or args.days < 1 or args.chunk_days < 1:
         parser.error("Indica al menos un símbolo y valores positivos para --days y --chunk-days.")
     try:
@@ -173,20 +234,35 @@ def main() -> int:
     except Exception as exc:  # Report a sanitized failure; never echo request URLs with any user data.
         print(f"No se pudo completar el sondeo público ({type(exc).__name__}).", file=sys.stderr)
         return 1
+    if universe:
+        report["universe_selection"] = universe
+    if args.compact:
+        for observation in report["observations"]:
+            observation.pop("timestamps_ms", None)
     capture_id = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
     output_dir = args.output_dir / "coverage" / capture_id
     output_dir.mkdir(parents=True, exist_ok=False)
     output_path = output_dir / "coverage.json"
     output_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Informe guardado: {output_path}")
-    for item in report["summaries"]:
-        print(
-            f"{item['symbol']} {item['series']}: {item['point_count']} puntos; "
-            f"{item['gap_count']} huecos; desde {item['first_point_utc']} hasta {item['last_point_utc']}; "
-            f"chunks con more=true: {item['chunks_with_more']}"
-        )
-        if item["chunk_errors"]:
-            print(f"  Respuestas con error documentadas: {len(item['chunk_errors'])}")
+    if args.summary_only:
+        for series in report["series"]:
+            items = [item for item in report["summaries"] if item["series"] == series]
+            available = sum(item["point_count"] > 0 for item in items)
+            failed = sum(bool(item["chunk_errors"]) for item in items)
+            gaps = sum(item["gap_count"] for item in items)
+            counts = sorted(item["point_count"] for item in items)
+            median = counts[len(counts) // 2] if counts else 0
+            print(f"{series}: datos en {available}/{len(items)} contratos; mediana={median} puntos; contratos con errores={failed}; huecos horarios={gaps}")
+    else:
+        for item in report["summaries"]:
+            print(
+                f"{item['symbol']} {item['series']}: {item['point_count']} puntos; "
+                f"{item['gap_count']} huecos; desde {item['first_point_utc']} hasta {item['last_point_utc']}; "
+                f"chunks con more=true: {item['chunks_with_more']}"
+            )
+            if item["chunk_errors"]:
+                print(f"  Respuestas con error documentadas: {len(item['chunk_errors'])}")
     return 0
 
 

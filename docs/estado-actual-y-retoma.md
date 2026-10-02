@@ -28,6 +28,8 @@ El 2026-10-02 se guardó además una instantánea completa del endpoint público
 
 También se sondeó un año de historia pública horaria para `PF_XBTUSD` y `PF_ETHUSD`: trade, mark y future-basis devuelven 8.761 puntos cada uno desde 2025-10-02; funding devuelve 5.556 puntos desde 2026-02-12 13:00 UTC. No se observaron huecos horarios dentro de los tramos devueltos; funding anterior a esa fecha no estuvo disponible en estas consultas. Informe y hashes en `data/market_data/coverage/20261002T001950Z/coverage.json`. Este es un sondeo por ventanas, no un backtest ni prueba de rentabilidad.
 
+El 2026-10-02 también se descargó y normalizó esa muestra BTC/ETH en `data/market_data/datasets/20261002T003224Z/`, con respuestas originales gzip, CSV gzip y manifiestos por serie. Una comprobación de los últimos 30 días cubrió 172 contratos cripto PF_/PI_ según categorías del catálogo: los cuatro tipos de serie devolvieron 721 puntos por contrato, sin errores ni saltos horarios, en `data/market_data/coverage/20261002T004152Z/coverage.json`. El sondeo previo `20261002T003731Z` usó solo prefijos PF_/PI_ e incluía productos no cripto; está marcado como preliminar y supersedido.
+
 ## Estado de implementación
 
 Está implementada la base de investigación: catálogo, almacenamiento SQLite, aprovisionador de perfiles y scripts que ejecutan investigación web y selección de estrategias mediante la Agents API.
@@ -48,8 +50,8 @@ Por tanto, aún no hay una estrategia propia probada ni evidencia de rentabilida
 
 1. Esperar la respuesta del ticket ya enviado a Kraken Support. Cuando contesten, revisar sus indicaciones antes de cualquier nueva prueba; no adjuntar ni enviar claves, secrets o firmas.
 2. Usar la adaptación de la selección `high` recogida en `docs/plan-pruebas-estrategias-kraken.md`: basis/funding como hipótesis específica y momentum temporal como benchmark; posponer momentum transversal hasta reconstruir el universo histórico.
-3. Ampliar la medición de antigüedad máxima y límites de consulta por contrato. El primer sondeo de velas `trade`/`mark`, funding y basis para BTC y ETH está guardado en `data/market_data/coverage/`; su tramo de funding comienza el 2026-02-12.
-4. Implementar y versionar la ingestión/normalización de datos históricos y de mercado, con frescura, huecos, contratos y funding auditables.
+3. Ampliar la profundidad histórica por contrato y verificar límites de consulta. El pipeline de ingesta/normalización ya está implementado y produjo la muestra versionada BTC/ETH en `data/market_data/datasets/`.
+4. Elegir y justificar una shortlist para backtest según antigüedad, profundidad, liquidez, especificaciones y elegibilidad; no asumir que el snapshot público confirma acceso de la cuenta española.
 5. Construir un motor determinista de backtesting y probar primero una estrategia de referencia por vez, incluyendo comisión maker/taker, spread, slippage, funding y liquidación/margen cuando corresponda.
 6. Evaluar cronológicamente fuera de muestra y walk-forward, con costes estresados, drawdown/colas, sensibilidad y registro de todas las variantes; la revisión de Astra audita la evidencia, pero no reemplaza los cálculos ni los controles locales.
 7. Solo después de resultados robustos, pasar a paper trading. La ejecución con dinero real queda para una fase posterior, con permisos mínimos, límites duros y supervisión humana.

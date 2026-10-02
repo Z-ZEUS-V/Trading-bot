@@ -19,6 +19,8 @@ Starter project for the strategy research workflow and four OpenAI API agents.
 Capture the current public catalog from the repository root with `python scripts/capture_kraken_instruments.py`. The raw response and a manifest are saved under `data/market_data/instruments/`; the snapshot is not an account eligibility check or a historical universe.
 
 Probe historical coverage with `python scripts/probe_kraken_public_coverage.py --days 365 --chunk-days 30`. This stores response hashes, observed timestamp ranges, and gaps under `data/market_data/coverage/`; it does not download or store every market-data point.
+
+Probe the last 30 days for current crypto perpetual candidates from the saved instrument catalog with `python scripts/probe_kraken_public_coverage.py --all-active-crypto-perps --days 30 --chunk-days 30 --compact --summary-only`. Download and normalize a bounded historical sample with `python scripts/ingest_kraken_public_history.py --symbols PF_XBTUSD,PF_ETHUSD --days 365 --chunk-days 30`; each run stores compressed raw responses, normalized gzip CSVs, and a provenance manifest under `data/market_data/datasets/`.
 - `docs/estado-actual-y-retoma.md`: recovered project status, implemented parts, missing components, and recommended continuation order.
 - `docs/estimacion-costes-operativos-y-criterios-reasoning.md`: operating-cost scenarios per futures round trip and criteria for escalating Astra reasoning from medium to high.
 - `docs/plan-optimizacion-costes-y-calidad.md`: phased plan for local gating, token reduction, model routing, evaluation and per-trade cost telemetry.
