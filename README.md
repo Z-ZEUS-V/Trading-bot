@@ -13,6 +13,12 @@ Starter project for the strategy research workflow and four OpenAI API agents.
 - `docs/auditoria-cobertura-estrategias.md`: audit of researched, shortlisted, deferred, and out-of-scope strategy families.
 - `scripts/`: create agent profiles and run research/selection sessions.
 - `src/astra_research/`: catalog and CLI package.
+- `scripts/capture_kraken_instruments.py`: save a dated, hashed snapshot of Kraken Derivatives' public instrument catalog without API credentials.
+- `scripts/probe_kraken_public_coverage.py`: measure one-hour history windows for candles, funding, and basis without credentials.
+
+Capture the current public catalog from the repository root with `python scripts/capture_kraken_instruments.py`. The raw response and a manifest are saved under `data/market_data/instruments/`; the snapshot is not an account eligibility check or a historical universe.
+
+Probe historical coverage with `python scripts/probe_kraken_public_coverage.py --days 365 --chunk-days 30`. This stores response hashes, observed timestamp ranges, and gaps under `data/market_data/coverage/`; it does not download or store every market-data point.
 - `docs/estado-actual-y-retoma.md`: recovered project status, implemented parts, missing components, and recommended continuation order.
 - `docs/estimacion-costes-operativos-y-criterios-reasoning.md`: operating-cost scenarios per futures round trip and criteria for escalating Astra reasoning from medium to high.
 - `docs/plan-optimizacion-costes-y-calidad.md`: phased plan for local gating, token reduction, model routing, evaluation and per-trade cost telemetry.
