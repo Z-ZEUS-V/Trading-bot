@@ -271,7 +271,7 @@ def main() -> int:
         print(
             f"{item['symbol']} {item['series']}: {item['point_count']} puntos; "
             f"{item['gap_count']} huecos; errores de consulta={failed}; "
-            f"{item['first_point_utc']} → {item['last_point_utc']}"
+            f"{item['first_point_utc']} to {item['last_point_utc']}"
         )
     return 0
 
