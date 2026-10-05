@@ -1,0 +1,39 @@
+{
+  "captured_at_utc": "2026-10-05T20:49:10.290091+00:00",
+  "credentials_used": false,
+  "observations": [
+    {
+      "symbol": "PF_XBTUSD",
+      "source": "https://futures.kraken.com/derivatives/api/v3/historical-funding-rates?symbol=PF_XBTUSD",
+      "result": "success",
+      "count": 8861,
+      "first": "2025-10-01T08:00:00Z",
+      "last": "2026-10-05T20:00:00Z",
+      "response_sha256": "d215c51e5e9a5bf8fde9cb0f346ab1f289cf728e545d074a075644e508ca2bce",
+      "raw_file": "PF_XBTUSD.json.gz",
+      "fields": [
+        "fundingRate",
+        "relativeFundingRate",
+        "timestamp"
+      ],
+      "server_time": "2026-10-05T20:49:09.993Z"
+    },
+    {
+      "symbol": "PF_ETHUSD",
+      "source": "https://futures.kraken.com/derivatives/api/v3/historical-funding-rates?symbol=PF_ETHUSD",
+      "result": "success",
+      "count": 8861,
+      "first": "2025-10-01T08:00:00Z",
+      "last": "2026-10-05T20:00:00Z",
+      "response_sha256": "18413942140341c2b56e4cfa2b81b5c39e9b363b75214ab3dbf778fe803bd88a",
+      "raw_file": "PF_ETHUSD.json.gz",
+      "fields": [
+        "fundingRate",
+        "relativeFundingRate",
+        "timestamp"
+      ],
+      "server_time": "2026-10-05T20:49:10.204Z"
+    }
+  ],
+  "note": "Public endpoint reconnaissance; not yet normalized or validated as settled funding cash flows."
+}

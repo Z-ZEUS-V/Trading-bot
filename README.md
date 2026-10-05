@@ -31,6 +31,14 @@ Estimate historical depth per contract/series with `python scripts/probe_kraken_
 - `docs/comparativa-comisiones-kraken-broker.md`: Kraken crypto derivatives maker/taker round-trip costs versus a CME micro Bitcoin futures broker reference.
 - `docs/analisis-defi-kraken-espana.md`: feasibility, fee comparison, legal-access uncertainties, and security requirements for a possible DeFi perpetuals testnet evaluation.
 - `docs/plan-pruebas-estrategias-kraken.md`: adaptation of the `high` strategy selection to Kraken crypto perpetuals, public API checks, data coverage requirements, and the safe next steps.
+- `docs/replanteamiento-capital-inicial-50-usd.md`: new research plan with 50 USD initial trading capital, an explicit cost/lot-size viability gate, and no assumption that ranked strategies are profitable.
+- `docs/estudio-trading-algoritmico-2026-10-05.md`: applied study, reviewed primary sources, cross-margin/stop design, 5–10% account profit targets and 2–5% planned risk, data corrections, and falsifiable trend experiments. No validated strategy yet.
+- `scripts/analyze_account_risk_targets.py`: offline account-target arithmetic, including entry/exit fees, hypothetical friction, break-even win rates and loss streaks. Run with `--output` pointing to a new directory; results in `data/research_runs/20261005_account_risk/` are scenarios, not backtests.
+- `data/market_data/funding_rates/20261005T204909Z/`: raw public historical-funding responses for BTC/ETH from October 2025. The subsequent local replay reconciles the public sources and recovers two missing hours per symbol; private account cashflows remain unverified.
+- `docs/simulacion-local-estrategias-2026-10-05.md`: first local replay results, funding reconciliation, limitations, and a low-cost monitoring design. No strategy is approved for live trading.
+- `src/trading_lab/`: deterministic closed-bar signals, single-position USD ledger, lot/tick/margin constraints, and approximate hourly fills; no agent or network dependency.
+- `config/local_strategy_research.json`: frozen research assumptions and chronological windows, with August–September reserved.
+- `scripts/run_local_strategy_research.py`: reproduce the 16 evaluations locally with `--output data/research_runs/<new-directory>`. Python standard library only; no package installation or API key required.
 - `scripts/check_kraken_futures_key.py`: local, read-only Kraken Derivatives API-key check. Prompts for credentials without echo and never writes or prints them.
 - `scripts/check_kraken_pro_key.py`: local, read-only Kraken Pro Spot REST API-key check, separate from Futures. Prompts hide credentials and only reports permission names.
 - Current scope: crypto derivatives on Kraken only; brokers, equities, and commodities are parked. DeFi remains research/testnet-only. The user chose Astra `high` strategy selection as the research-prioritization reference; those strategies still require crypto/Kraken-specific validation and backtests.
@@ -39,4 +47,4 @@ Estimate historical depth per contract/series with `python scripts/probe_kraken_
 
 Requires Python 3.11+. Install with `pip install -e .`. Keep `OPENAI_API_KEY` in a local environment variable; never commit secrets.
 
-The project does not yet connect to an exchange or place orders. It defines the agent workflow and research library; the market data adapter, backtesting engine, and bot dispatcher remain to be built. Validate strategies with realistic costs, out-of-sample tests, and paper trading before deployment.
+The project reads public exchange data and now includes an initial offline strategy simulator. It does not place orders or run a live monitor. Execution calibration, broader validation, paper trading, and a bot dispatcher remain pending. The user has paused all Astra calls until further instruction; existing agent profiles are unchanged.

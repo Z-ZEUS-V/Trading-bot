@@ -1,0 +1,20 @@
+[
+  {
+    "name": "tickers",
+    "url": "https://futures.kraken.com/derivatives/api/v3/tickers",
+    "sha256_raw": "6693fa97297ceda88d54a11a89f39143f2274fe528be908d94eda8dce6ad9b18",
+    "serverTime": "2026-10-05T21:09:21.304Z"
+  },
+  {
+    "name": "PF_XBTUSD",
+    "url": "https://futures.kraken.com/derivatives/api/v3/historical-funding-rates?symbol=PF_XBTUSD",
+    "sha256_raw": "caa14c0413149cedd5e4c94ccf68161fbbd4c80a49392206d886d30e88f7e555",
+    "serverTime": "2026-10-05T21:09:21.422Z"
+  },
+  {
+    "name": "PF_ETHUSD",
+    "url": "https://futures.kraken.com/derivatives/api/v3/historical-funding-rates?symbol=PF_ETHUSD",
+    "sha256_raw": "3995f3a51080227fb0fb96f348e240a92a63bc785664c32756843297140e18a0",
+    "serverTime": "2026-10-05T21:09:21.622Z"
+  }
+]

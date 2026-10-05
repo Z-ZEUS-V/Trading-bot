@@ -4,7 +4,11 @@
 
 **Uso:** preparar y auditar el conjunto de datos para investigación y backtests; no es una recomendación de trading.
 
+**Nota posterior, 2026-10-05:** los resultados de funding de este informe se refieren a las consultas de analytics realizadas el 2 de octubre. Otro endpoint público, `historical-funding-rates`, ha devuelto 8.861 registros por BTC/ETH desde 2025-10-01 08:00 hasta 2026-10-05 20:00 UTC. Captura y auditoría en `data/market_data/funding_rates/20261005T204909Z/`: siete intervalos con ocho horas ausentes por activo. Pendientes unidades, devengo/publicación y conciliación. No interpretar febrero de 2026 como límite de todas las fuentes ni extrapolar la nueva cobertura al universo entero. Se conservan intactos los resultados históricos de esta página y sus datasets.
+
 ## Método y límite de las consultas
+
+El adaptador del primer replay posterior recupera dos de esas ocho horas mediante analytics observado y excluye la vela parcial final del snapshot. Las seis horas restantes siguen ausentes. Detalle de conciliación y resultados en `docs/simulacion-local-estrategias-2026-10-05.md`; no se alteraron los ficheros originales.
 
 Se usó el snapshot público del catálogo `data/market_data/instruments/20261002T001640Z/response.json` y el filtro de 172 contratos cripto perpetuos descrito en su manifiesto. Para cada contrato se consultó `trade`, `mark`, `funding` y `future-basis` desde `openingDate` hasta la captura: 688 peticiones, sin credenciales ni órdenes. Respuestas, primeras/últimas marcas, cantidad, flag de truncamiento y SHA-256 están en `data/market_data/history_depth/20261002T010323Z/depth.json`.
 

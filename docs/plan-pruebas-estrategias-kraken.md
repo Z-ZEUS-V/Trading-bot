@@ -4,7 +4,13 @@
 **Base de priorización:** selección de Astra ejecutada con razonamiento `high`.  
 **Alcance:** investigación y backtesting; ninguna hipótesis queda autorizada para operar.
 
+**Actualización 2026-10-05:** el usuario fija 50 USD de capital inicial para trading, con gastos operativos presupuestados aparte, y confirma que ninguna estrategia seleccionada tiene rentabilidad verificada. El ranking `high` queda como índice de hipótesis, no como evidencia. Aplicar primero el gate de viabilidad y el plan de pruebas de `docs/replanteamiento-capital-inicial-50-usd.md`.
+
+**Actualización posterior de alcance y prioridad:** el usuario precisa cruzado con stop, objetivo de beneficio 5–10 % de equity y pérdida planificada 2–5 %. El estudio `docs/estudio-trading-algoritmico-2026-10-05.md` propone investigar primero ruptura/tendencia y momentum diario con riesgo base 2 %, y deja funding/carry como línea separada. Esta revisión sustituye el orden de prioridad del ranking inicial mostrado abajo. No cambia el estado de ninguna estrategia a rentable o aprobada. La cobertura de funding de analytics tampoco es el máximo de toda Kraken: se capturó una segunda fuente histórica desde octubre de 2025 con ocho horas ausentes por activo, pendiente de conciliación.
+
 ## Resultado de la adaptación del ranking
+
+**Ejecución posterior:** H1/H2 ya tienen 16 evaluaciones exploratorias locales, conciliación pública de funding y resultados en `docs/simulacion-local-estrategias-2026-10-05.md`. Ruptura pierde en desarrollo y mejora en validación; momentum diario tiene muestra insuficiente y pocos objetivos alcanzados. Ninguna aprobada. Agosto–septiembre sigue reservado. Por instrucción nueva del usuario, no llamar a Astra de ningún nivel hasta nuevo aviso.
 
 El ranking de investigación original cubría varios mercados. Para el alcance actual (cripto en Kraken Derivatives) queda filtrado así:
 
@@ -16,7 +22,7 @@ El ranking de investigación original cubría varios mercados. Para el alcance a
 | Carry de materias primas | **Fuera del alcance actual.** | Ninguna para esta ronda. | Broker y mercados no cripto están aparcados. |
 | Pares, reversión, ML/ensemble y market-making | **No entran en la primera ronda.** | Reconsiderar solo si aparece evidencia y datos específicos que justifiquen abrir otra línea. | Requieren más supuestos, pruebas o datos de microestructura que todavía no están disponibles. |
 
-El orden para construir el primer backtest será: comprobar y definir la hipótesis de funding/basis en datos, y en paralelo mantener momentum temporal como benchmark sencillo. Esto solo asigna el orden de investigación. No dice que haya que elegir una de estas para operar. Para aislar la contribución, no combinar señales ni ajustar muchos parámetros en la primera prueba.
+El orden inicial priorizaba funding/basis y momentum como benchmark. El estudio aplicado del 5 de octubre revisa esa prioridad: primero H1 ruptura y H2 momentum diario; funding/basis en una línea separada. Para aislar la contribución, no combinar señales ni ajustar muchos parámetros en la primera prueba. La tabla conserva la adaptación del ranking original como antecedente.
 
 ## Comprobación pública de Kraken realizada
 

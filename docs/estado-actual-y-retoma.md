@@ -1,6 +1,6 @@
 # Estado actual y guía para retomar
 
-Última consolidación: 2026-10-01. Este documento resume lo que puede recuperarse de los archivos disponibles y las decisiones de alcance confirmadas en esta conversación. No sustituye una exportación de la conversación original de Codex.
+Última consolidación: 2026-10-05. Este documento resume lo que puede recuperarse de los archivos disponibles y las decisiones de alcance confirmadas en esta conversación. No sustituye una exportación de la conversación original de Codex.
 
 ## Objetivo del proyecto
 
@@ -10,7 +10,13 @@ Alcance actual por decisión del usuario: operar solo cripto mediante Kraken Der
 
 Decisión de razonamiento: el usuario quiere utilizar como referencia de selección de estrategias el resultado generado por Astra con esfuerzo `high`, por el valor de análisis adicional. Ese ranking prioriza **investigación y backtests**, no autoriza operación ni prueba rentabilidad. No se ha decidido que Astra deba usar `high` en cada futura consulta operativa; el coste y la calidad deben medirse con paquetes reales antes de fijar el enrutamiento de producción. Véanse los informes versionados de selección y costes en `data/research_runs/` y `docs/estimacion-costes-operativos-y-criterios-reasoning.md`.
 
+**Replanteamiento confirmado el 2026-10-05:** el capital inicial previsto para trading es 50 USD; gastos operativos presupuestados aparte; el capital puede aumentar según resultados. El usuario informa que ninguna estrategia seleccionada tiene rentabilidad verificada para el proyecto y que los costes hacen peor su viabilidad. Por tanto, las estrategias clasificadas son hipótesis para probar, no candidatas aprobadas. La siguiente fase debe comprobar viabilidad de lote/margen y P&L neto para 50 USD antes de avanzar a ejecución. Plan en `docs/replanteamiento-capital-inicial-50-usd.md`.
+
+**Aclaración posterior del usuario, 2026-10-05:** desea margen cruzado con stop loss, beneficio objetivo de 5–10 % de la cuenta de futuros por operación ganadora y pérdida planificada de 2–4 %, hasta 5 %. Pide ampliar sustancialmente el estudio de trading algorítmico y permite propuestas alternativas. El estudio interpreta los porcentajes sobre equity al entrar y netos de costes de trading; no son retornos prometidos ni un límite garantizado por el stop. La propuesta inicial es simular riesgo 2 %, una posición total y exposición máxima 2x, comparando escenarios mayores por separado; estas últimas son propuestas de investigación, no ajustes aprobados para operar. Fuentes, aprendizaje aplicado, cálculos y experimentos propuestos en `docs/estudio-trading-algoritmico-2026-10-05.md`.
+
 **Confirmación requerida:** durante la fase de implementación, antes de ejecutar cualquier llamada a un modelo con razonamiento `high`, pedir confirmación explícita al usuario. No disparar esa llamada hasta recibirla. Esta confirmación es independiente de haber elegido el resultado `high` existente como referencia de investigación.
+
+**Instrucción posterior vigente, 2026-10-05:** no llamar a Astra todavía, en ningún nivel. El usuario pide continuar en la estrategia del exchange y dejar para después la revisión de agentes y posible cambio de exchange. La monitorización futura deberá ser asequible. No ejecutar investigación/selección remota por iniciativa propia.
 
 ## Recuperado y disponible
 
@@ -18,7 +24,7 @@ Decisión de razonamiento: el usuario quiere utilizar como referencia de selecci
 - Dos informes de investigación guardados en `data/research_runs/` y una síntesis en `strategy-research.md`.
 - Arquitectura propuesta, notas históricas específicas de Bitunix, prompts de selección/decisión y scripts para las sesiones de investigación.
 - `data/platform_agents.json` contiene cuatro perfiles: investigador, analista de mercado, revisor de riesgo/backtests y coordinador Astra. En una comprobación previa de la API, los cuatro IDs coincidían con los perfiles remotos del proyecto de API seleccionado.
-- La copia recuperada no tiene metadatos `.git`; tampoco contiene el historial de chat de Codex ni un registro de las conversaciones del otro ordenador.
+- La copia recuperada inicialmente no tenía metadatos `.git` ni el historial de chat del otro ordenador. El directorio de trabajo actual sí es un repositorio Git; eso no recupera automáticamente aquellas conversaciones.
 
 La comprobación remota de agentes es un dato de la sesión anterior, no una comprobación de conectividad o permisos realizada al leer esta carpeta. No se guarda aquí ninguna clave API.
 
@@ -34,31 +40,40 @@ El 2026-10-02 se consultó además la profundidad por contrato/serie de los 172 
 
 Para convertir esa medición en un conjunto concreto de backtest se descargó el histórico disponible de `PF_XBTUSD` y `PF_ETHUSD` por ventanas de 30 días en `data/market_data/datasets/20261002T010411Z/`: 39.688 puntos trade por activo desde 2022-03-23, 39.709 puntos mark y basis desde 2022-03-22, y 5.557 puntos de funding desde 2026-02-12. Las ocho series cubren hasta 2026-10-02, sin huecos horarios detectados ni errores de consulta; ningún chunk quedó truncado. No se rellenó el periodo previo a los datos de funding. La descarga se guardó correctamente; el comando original encontró luego un problema de codificación al imprimir una flecha Unicode en Windows, ya corregido en `scripts/ingest_kraken_public_history.py`.
 
+**Corrección de alcance del funding, 2026-10-05:** los límites anteriores describen las consultas de analytics, no toda la historia pública de Kraken. El endpoint distinto `historical-funding-rates` devolvió 8.861 observaciones por BTC/ETH, desde 2025-10-01 08:00 hasta 2026-10-05 20:00 UTC. Respuestas, SHA-256 y auditoría en `data/market_data/funding_rates/20261005T204909Z/`. Se detectaron 7 intervalos con 8 horas ausentes por activo; cero duplicados y cero tasas no finitas. No está conciliado aún el significado de tasas, signo, devengo y publicación con las otras series. No rellenar con cero ni modificar los conjuntos anteriores. Esta captura no constituye todavía un dataset completo de P&L.
+
+Se ejecutó también un ejercicio local de 120 escenarios de objetivos/riesgo, largos y cortos, con costes explícitos: `data/research_runs/20261005_account_risk/`. Es aritmética de contratos lineales, no resultados de estrategias. No incluye funding, liquidación ni redondeo a lotes.
+
+**Siguiente paso completado, 2026-10-05:** conciliación local de funding y primera simulación de estrategias. Las 5.555 observaciones comunes por activo coinciden; se recuperan dos horas ausentes del histórico usando analytics observado, y quedan seis huecos anteriores al comienzo de las evaluaciones. Una captura ticker/histórico a las 21:09 UTC respalda que la tasa marcada a las 21:00 aplica a esa hora. Evidencia en `data/market_data/funding_timing/20261005T210921Z/` y `data/research_runs/20261005_local_strategies_v1/funding_audit.json`. No se conciliaron extractos privados. La vela parcial de las 01:00 UTC del 2 de octubre queda excluida del adaptador.
+
+El motor local `src/trading_lab/` y `scripts/run_local_strategy_research.py` ejecutaron 16 evaluaciones (H1/H2, objetivos 5/10 %, dos costes, dos ventanas). Desarrollo febrero–mayo: H1 aproximadamente −15 %; H2 cerca de cero. Validación junio–julio: H1 +1,27–3,42 % y H2 +3,71–3,92 %, con solo 3–5 operaciones H2. Estos son retornos del periodo, no por operación. Agosto–septiembre queda reservado sin resultados de estrategias. Informe y limitaciones en `docs/simulacion-local-estrategias-2026-10-05.md`; no hay estrategia aprobada ni llamadas a Astra.
+
 ## Estado de implementación
 
 Está implementada la base de investigación: catálogo, almacenamiento SQLite, aprovisionador de perfiles y scripts que ejecutan investigación web y selección de estrategias mediante la Agents API.
 
 Primera optimización aplicada: resultados de selección estática se guardan con huella del prompt/perfil, usage y coste estimado; una coincidencia exacta puede reutilizarse localmente y `--refresh` fuerza una llamada. El investigador web guarda usage pero siempre repite búsquedas para evitar servir investigación obsoleta. Los perfiles/modelos operativos existentes siguen sin cambios; la selección `high` se usa ahora como referencia del ranking de investigación, no como configuración ya aprobada para cada consulta en vivo.
 
-Todavía no están implementados:
+Además de la biblioteca de investigación, están implementados un adaptador de snapshots Kraken con hashes y conciliación de funding, señales H1/H2 deterministas y un primer replay de cartera lineal USD con lotes, costes y fills OHLC aproximados. No importa modelos/SDKs ni envía peticiones durante el cálculo.
 
-1. Adaptador de datos de Kraken Derivatives y, si se mantiene un universo por capitalización, proveedor externo con ranking histórico.
-2. Normalización de velas, especificaciones de contrato, frescura y calidad de datos.
-3. Motor determinista de backtesting con costes, funding, slippage, validación walk-forward y resultados versionados.
+Todavía faltan:
+
+1. Feed continuo, reconexión, persistencia y supervisor 24/7; un universo transversal requeriría además composición histórica.
+2. Calibración con spreads/fills observados y contraste de flujos privados de funding cuando vuelva la autenticación. La conciliación pública ya permite el replay documentado, no una certificación de cuenta.
+3. Validación estadística más amplia, nuevos periodos completos, incertidumbre, modelado de latencia/fills parciales/liquidación y evaluación final reservada. El replay inicial ya guarda resultados versionados.
 4. Aplicación que coordine el feed, los cálculos locales, los agentes y la salida analítica.
 5. Paper trading. No existe integración de envío de órdenes.
 
-Por tanto, aún no hay una estrategia propia probada ni evidencia de rentabilidad del bot.
+Hay resultados exploratorios de dos reglas; aún no hay estrategia con rentabilidad robusta verificada ni bot operativo.
 
 ## Siguiente secuencia de trabajo documentada
 
 1. Esperar la respuesta del ticket ya enviado a Kraken Support. Cuando contesten, revisar sus indicaciones antes de cualquier nueva prueba; no adjuntar ni enviar claves, secrets o firmas.
-2. Usar la adaptación de la selección `high` recogida en `docs/plan-pruebas-estrategias-kraken.md`: basis/funding como hipótesis específica y momentum temporal como benchmark; posponer momentum transversal hasta reconstruir el universo histórico.
-3. Usar el histórico ampliado BTC/ETH como dataset técnico de arranque y validar sus convenciones de timestamps, funding y contratos antes de calcular señales. La profundidad y el límite de respuesta están medidos en `docs/historico-publico-profundidad-2026-10-02.md`.
-4. Elegir y justificar una shortlist final para backtest según antigüedad, profundidad, liquidez, especificaciones y elegibilidad; no asumir que el snapshot público confirma acceso de la cuenta española. La muestra BTC/ETH habilita pruebas del pipeline, no establece por sí sola que sean los únicos activos.
-5. Construir un motor determinista de backtesting y probar primero una estrategia de referencia por vez, incluyendo comisión maker/taker, spread, slippage, funding y liquidación/margen cuando corresponda.
-6. Evaluar cronológicamente fuera de muestra y walk-forward, con costes estresados, drawdown/colas, sensibilidad y registro de todas las variantes; la revisión de Astra audita la evidencia, pero no reemplaza los cálculos ni los controles locales.
-7. Solo después de resultados robustos, pasar a paper trading. La ejecución con dinero real queda para una fase posterior, con permisos mínimos, límites duros y supervisión humana.
+2. Aplicar primero la puerta de viabilidad para 50 USD del documento `docs/replanteamiento-capital-inicial-50-usd.md`, incluida especificación y coste vigentes del lote mínimo; si un contrato no cabe dentro de límites de riesgo, usar `NO_TRADE`.
+3. Revisar el fallo H1 y la escasez de objetivos alcanzados H2 usando desarrollo; registrar hipótesis nuevas antes de ejecutarlas. Mantener datos ausentes explícitos y no completar con cero las seis horas antiguas todavía no recuperadas.
+4. Mejorar la precisión de ejecución y ampliar periodos completos antes de afirmar rentabilidad. Conservar agosto–septiembre reservado; no ajustar sobre la validación ya observada. Funding/basis sigue como línea separada.
+5. Añadir evaluación de incertidumbre y más periodos cronológicos; monitor local continuo solo cuando su alcance se implemente. Mantener 0 llamadas a Astra hasta nueva indicación del usuario.
+6. Solo después de evidencia robusta, límites de riesgo aprobados y simulación/paper satisfactoria, estudiar una prueba real con supervisión humana. El bot debe poder no operar indefinidamente.
 
 ## Inconsistencia conocida en la documentación
 

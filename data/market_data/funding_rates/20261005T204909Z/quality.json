@@ -1,0 +1,104 @@
+[
+  {
+    "symbol": "PF_XBTUSD",
+    "point_count": 8861,
+    "duplicates": 0,
+    "timestamps_ascending": true,
+    "nonfinite_rates": 0,
+    "gap_count": 7,
+    "missing_hours": 8,
+    "gaps": [
+      {
+        "after": "2025-11-01T15:00:00+00:00",
+        "before": "2025-11-01T18:00:00+00:00",
+        "missing_hours": 2
+      },
+      {
+        "after": "2025-11-02T03:00:00+00:00",
+        "before": "2025-11-02T05:00:00+00:00",
+        "missing_hours": 1
+      },
+      {
+        "after": "2025-11-19T04:00:00+00:00",
+        "before": "2025-11-19T06:00:00+00:00",
+        "missing_hours": 1
+      },
+      {
+        "after": "2025-12-04T08:00:00+00:00",
+        "before": "2025-12-04T10:00:00+00:00",
+        "missing_hours": 1
+      },
+      {
+        "after": "2026-02-04T11:00:00+00:00",
+        "before": "2026-02-04T13:00:00+00:00",
+        "missing_hours": 1
+      },
+      {
+        "after": "2026-02-13T17:00:00+00:00",
+        "before": "2026-02-13T19:00:00+00:00",
+        "missing_hours": 1
+      },
+      {
+        "after": "2026-05-09T05:00:00+00:00",
+        "before": "2026-05-09T07:00:00+00:00",
+        "missing_hours": 1
+      }
+    ],
+    "not_yet_validated": [
+      "Publication versus accrual timestamp",
+      "Rate units and sign relative to linear contract",
+      "Agreement with analytics indicator and realized cash flows"
+    ]
+  },
+  {
+    "symbol": "PF_ETHUSD",
+    "point_count": 8861,
+    "duplicates": 0,
+    "timestamps_ascending": true,
+    "nonfinite_rates": 0,
+    "gap_count": 7,
+    "missing_hours": 8,
+    "gaps": [
+      {
+        "after": "2025-11-01T15:00:00+00:00",
+        "before": "2025-11-01T18:00:00+00:00",
+        "missing_hours": 2
+      },
+      {
+        "after": "2025-11-02T03:00:00+00:00",
+        "before": "2025-11-02T05:00:00+00:00",
+        "missing_hours": 1
+      },
+      {
+        "after": "2025-11-19T04:00:00+00:00",
+        "before": "2025-11-19T06:00:00+00:00",
+        "missing_hours": 1
+      },
+      {
+        "after": "2025-12-04T08:00:00+00:00",
+        "before": "2025-12-04T10:00:00+00:00",
+        "missing_hours": 1
+      },
+      {
+        "after": "2026-02-04T11:00:00+00:00",
+        "before": "2026-02-04T13:00:00+00:00",
+        "missing_hours": 1
+      },
+      {
+        "after": "2026-02-13T17:00:00+00:00",
+        "before": "2026-02-13T19:00:00+00:00",
+        "missing_hours": 1
+      },
+      {
+        "after": "2026-05-09T05:00:00+00:00",
+        "before": "2026-05-09T07:00:00+00:00",
+        "missing_hours": 1
+      }
+    ],
+    "not_yet_validated": [
+      "Publication versus accrual timestamp",
+      "Rate units and sign relative to linear contract",
+      "Agreement with analytics indicator and realized cash flows"
+    ]
+  }
+]
