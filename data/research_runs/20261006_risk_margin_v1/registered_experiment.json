@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "registered_on": "2026-10-06",
+  "purpose": "offline_risk_reward_and_margin_research",
+  "base_config": "config/local_strategy_research.json",
+  "catalog": "data/market_data/instruments/20261006T015156Z/response.json",
+  "strategy": {
+    "id": "H3_breakout_1h",
+    "kind": "breakout",
+    "bar_hours": 1,
+    "lookback": 20,
+    "atr_period": 14,
+    "stop_atr": 2.0,
+    "max_hold_bars": 48
+  },
+  "target_fraction": 0.005,
+  "risk_cases": [
+    {
+      "id": "primary_rr2",
+      "risk_fraction": 0.0025
+    },
+    {
+      "id": "sensitivity_rr1",
+      "risk_fraction": 0.005
+    },
+    {
+      "id": "sensitivity_rr5",
+      "risk_fraction": 0.001
+    }
+  ],
+  "maximum_nominal_per_allocated_margin": 25.0,
+  "maximum_allocated_margin_fraction": 0.4,
+  "minimum_free_equity_fraction_after_entry_fee": 0.6,
+  "theoretical_max_exposure_over_equity_before_venue_and_risk_limits": 10.0,
+  "minimum_net_target_to_budgeted_loss": 1.0,
+  "windows": [
+    {
+      "id": "development",
+      "from": "2026-02-14T00:00:00+00:00",
+      "to_exclusive": "2026-06-01T00:00:00+00:00"
+    },
+    {
+      "id": "chronological_check",
+      "from": "2026-06-01T00:00:00+00:00",
+      "to_exclusive": "2026-08-01T00:00:00+00:00"
+    }
+  ],
+  "bootstrap": {
+    "method": "circular_moving_blocks_of_calendar_daily_mark_returns",
+    "block_days": 7,
+    "resamples": 2000,
+    "seed": 61006
+  },
+  "screening_gates_for_further_validation": {
+    "minimum_trades_each_window_and_cost": 50,
+    "minimum_net_return_each_window_and_cost_exclusive": 0.0,
+    "minimum_profit_factor_each_window_and_cost": 1.1,
+    "maximum_hourly_mark_drawdown_fraction": 0.1,
+    "bootstrap_95pct_return_lower_bound_positive": true
+  },
+  "notes": [
+    "Only the primary case can be proposed by this protocol; sensitivities are not replacements selected on the chronological check.",
+    "H3 was discovered using development. June-July was already observed for H1/H2, so this is not a pristine study-wide holdout.",
+    "August-September remains reserved. No minute-level execution or 50-trade daily claim is made from hourly data.",
+    "The 25x nominal/margin preference does not override the public EEA retail 10% initial margin schedule.",
+    "40% is a ceiling on allocated initial margin; entry fees must also leave 60% free at entry, not a guarantee of permanently protected cross collateral.",
+    "Bootstrap uncertainty is conditional on the chosen rule and observed sample; it does not remove selection bias or guarantee future returns.",
+    "No strategy parameters will be changed after these results are observed. No Astra calls or real orders."
+  ]
+}

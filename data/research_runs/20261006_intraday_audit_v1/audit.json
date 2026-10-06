@@ -1,0 +1,204 @@
+{
+  "run": "data\\research_runs\\20261006_intraday_v1",
+  "run_manifest_sha256": "3e3e3c91114a80849e92e64c942834be1638e429389ce8b49f8b463988da0c9a",
+  "script_sha256": "7329e303fe36982f57d135fbcd56cd18dd177d48c12262d622a5c5f8f8b54e65",
+  "verified_manifest_hashes": 120,
+  "verified_raw_history_responses": 542,
+  "hourly_ohlc_reconciliation": [
+    {
+      "symbol": "PF_XBTUSD",
+      "kind": "trade",
+      "hours": 2952,
+      "ohlc_differences_over_1e_7": 0,
+      "max_price_difference": 0.0,
+      "examples": []
+    },
+    {
+      "symbol": "PF_XBTUSD",
+      "kind": "mark",
+      "hours": 2952,
+      "ohlc_differences_over_1e_7": 0,
+      "max_price_difference": 0.0,
+      "examples": []
+    },
+    {
+      "symbol": "PF_ETHUSD",
+      "kind": "trade",
+      "hours": 2952,
+      "ohlc_differences_over_1e_7": 0,
+      "max_price_difference": 0.0,
+      "examples": []
+    },
+    {
+      "symbol": "PF_ETHUSD",
+      "kind": "mark",
+      "hours": 2952,
+      "ohlc_differences_over_1e_7": 0,
+      "max_price_difference": 0.0,
+      "examples": []
+    }
+  ],
+  "ledger_diagnostics": [
+    {
+      "window": "development",
+      "case": "confirmed_breakout_5m",
+      "cost": "observed_spread_plus_1bp",
+      "first_mark_drawdown_over_ten_percent": "2026-04-11T23:14:00+00:00",
+      "minimum_realized_net_return_on_entry_equity": -0.0022853163746421557,
+      "mean_fee_fraction_entry_equity": 0.0006445934048768822,
+      "mean_friction_fraction_entry_equity": 0.00018362219841660746,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "development",
+      "case": "confirmed_breakout_5m",
+      "cost": "observed_spread_plus_5bp",
+      "first_mark_drawdown_over_ten_percent": "2026-04-11T05:27:00+00:00",
+      "minimum_realized_net_return_on_entry_equity": -0.0022622008890153342,
+      "mean_fee_fraction_entry_equity": 0.0004853314347457014,
+      "mean_friction_fraction_entry_equity": 0.0005297000575688651,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "development",
+      "case": "confirmed_breakout_1m",
+      "cost": "observed_spread_plus_1bp",
+      "first_mark_drawdown_over_ten_percent": "2026-04-02T14:26:00+00:00",
+      "minimum_realized_net_return_on_entry_equity": -0.002541284222404881,
+      "mean_fee_fraction_entry_equity": 0.0009713979077800376,
+      "mean_friction_fraction_entry_equity": 0.00032117574772560765,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "development",
+      "case": "confirmed_breakout_1m",
+      "cost": "observed_spread_plus_5bp",
+      "first_mark_drawdown_over_ten_percent": "2026-04-02T10:40:00+00:00",
+      "minimum_realized_net_return_on_entry_equity": -0.0028563533814315355,
+      "mean_fee_fraction_entry_equity": 0.0006796566150573873,
+      "mean_friction_fraction_entry_equity": 0.0007803195526558113,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "development",
+      "case": "reversion_5m",
+      "cost": "observed_spread_plus_1bp",
+      "first_mark_drawdown_over_ten_percent": null,
+      "minimum_realized_net_return_on_entry_equity": -0.002237818911280686,
+      "mean_fee_fraction_entry_equity": 0.0009340477386149393,
+      "mean_friction_fraction_entry_equity": 0.0002974463603566951,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "development",
+      "case": "reversion_5m",
+      "cost": "observed_spread_plus_5bp",
+      "first_mark_drawdown_over_ten_percent": null,
+      "minimum_realized_net_return_on_entry_equity": -0.002280613405012374,
+      "mean_fee_fraction_entry_equity": 0.0007267944664734101,
+      "mean_friction_fraction_entry_equity": 0.0007833493809447619,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "development",
+      "case": "reversion_1m",
+      "cost": "observed_spread_plus_1bp",
+      "first_mark_drawdown_over_ten_percent": null,
+      "minimum_realized_net_return_on_entry_equity": -0.0023798337289288674,
+      "mean_fee_fraction_entry_equity": 0.001284600394391863,
+      "mean_friction_fraction_entry_equity": 0.00044182977910068563,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "development",
+      "case": "reversion_1m",
+      "cost": "observed_spread_plus_5bp",
+      "first_mark_drawdown_over_ten_percent": null,
+      "minimum_realized_net_return_on_entry_equity": -0.0028117239999999478,
+      "mean_fee_fraction_entry_equity": 0.0012507405316485648,
+      "mean_friction_fraction_entry_equity": 0.001359390780836158,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "chronological_check",
+      "case": "confirmed_breakout_5m",
+      "cost": "observed_spread_plus_1bp",
+      "first_mark_drawdown_over_ten_percent": "2026-06-21T15:09:00+00:00",
+      "minimum_realized_net_return_on_entry_equity": -0.002271524283234723,
+      "mean_fee_fraction_entry_equity": 0.0006099922368758334,
+      "mean_friction_fraction_entry_equity": 0.000176048294895447,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "chronological_check",
+      "case": "confirmed_breakout_5m",
+      "cost": "observed_spread_plus_5bp",
+      "first_mark_drawdown_over_ten_percent": "2026-06-14T16:49:00+00:00",
+      "minimum_realized_net_return_on_entry_equity": -0.0022537685382886087,
+      "mean_fee_fraction_entry_equity": 0.0004687324665663321,
+      "mean_friction_fraction_entry_equity": 0.0005129602742637951,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "chronological_check",
+      "case": "confirmed_breakout_1m",
+      "cost": "observed_spread_plus_1bp",
+      "first_mark_drawdown_over_ten_percent": "2026-06-02T07:08:00+00:00",
+      "minimum_realized_net_return_on_entry_equity": -0.002515912890411582,
+      "mean_fee_fraction_entry_equity": 0.0008820434984206011,
+      "mean_friction_fraction_entry_equity": 0.0002954952532159448,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "chronological_check",
+      "case": "confirmed_breakout_1m",
+      "cost": "observed_spread_plus_5bp",
+      "first_mark_drawdown_over_ten_percent": "2026-06-02T02:03:00+00:00",
+      "minimum_realized_net_return_on_entry_equity": -0.002942918143211982,
+      "mean_fee_fraction_entry_equity": 0.0006256971853702026,
+      "mean_friction_fraction_entry_equity": 0.0007198366636861246,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "chronological_check",
+      "case": "reversion_5m",
+      "cost": "observed_spread_plus_1bp",
+      "first_mark_drawdown_over_ten_percent": null,
+      "minimum_realized_net_return_on_entry_equity": -0.002250269049757708,
+      "mean_fee_fraction_entry_equity": 0.0007137679883194829,
+      "mean_friction_fraction_entry_equity": 0.00024459759496194586,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "chronological_check",
+      "case": "reversion_5m",
+      "cost": "observed_spread_plus_5bp",
+      "first_mark_drawdown_over_ten_percent": null,
+      "minimum_realized_net_return_on_entry_equity": -0.002325344625594781,
+      "mean_fee_fraction_entry_equity": 0.0006003686877262365,
+      "mean_friction_fraction_entry_equity": 0.0006797522723058082,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "chronological_check",
+      "case": "reversion_1m",
+      "cost": "observed_spread_plus_1bp",
+      "first_mark_drawdown_over_ten_percent": null,
+      "minimum_realized_net_return_on_entry_equity": -0.002538353817819944,
+      "mean_fee_fraction_entry_equity": 0.0012416698096529113,
+      "mean_friction_fraction_entry_equity": 0.0004565537353372043,
+      "maximum_nominal_to_allocated_margin": 10.0
+    },
+    {
+      "window": "chronological_check",
+      "case": "reversion_1m",
+      "cost": "observed_spread_plus_5bp",
+      "first_mark_drawdown_over_ten_percent": null,
+      "minimum_realized_net_return_on_entry_equity": -0.002986296949575309,
+      "mean_fee_fraction_entry_equity": 0.0008642726175870512,
+      "mean_friction_fraction_entry_equity": 0.0010377595438605307,
+      "maximum_nominal_to_allocated_margin": 10.0
+    }
+  ],
+  "interpretation": "Diagnostics of fixed recorded paths, not new strategy trials. A 10% drawdown is a screening threshold, not an active kill switch in these replays."
+}

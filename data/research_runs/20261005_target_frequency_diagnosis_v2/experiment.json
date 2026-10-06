@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "registered_on": "2026-10-05",
+  "purpose": "development_only_diagnosis_no_live_trading",
+  "astra_enabled": false,
+  "base_config": "config/local_strategy_research.json",
+  "reference_results": "data/research_runs/20261005_local_strategies_v2",
+  "window": {
+    "from": "2026-02-14T00:00:00+00:00",
+    "to_exclusive": "2026-06-01T00:00:00+00:00"
+  },
+  "cases": [
+    {
+      "id": "control_H1_target5_risk2",
+      "strategy": "H1_breakout_4h",
+      "target": 0.05,
+      "risk": 0.02
+    },
+    {
+      "id": "control_H2_target5_risk2",
+      "strategy": "H2_momentum_1d",
+      "target": 0.05,
+      "risk": 0.02
+    },
+    {
+      "id": "H1_target05_risk2",
+      "strategy": "H1_breakout_4h",
+      "target": 0.005,
+      "risk": 0.02
+    },
+    {
+      "id": "H1_target1_risk2",
+      "strategy": "H1_breakout_4h",
+      "target": 0.01,
+      "risk": 0.02
+    },
+    {
+      "id": "H2_target05_risk2",
+      "strategy": "H2_momentum_1d",
+      "target": 0.005,
+      "risk": 0.02
+    },
+    {
+      "id": "H2_target1_risk2",
+      "strategy": "H2_momentum_1d",
+      "target": 0.01,
+      "risk": 0.02
+    },
+    {
+      "id": "H1_target05_risk05",
+      "strategy": "H1_breakout_4h",
+      "target": 0.005,
+      "risk": 0.005
+    },
+    {
+      "id": "H2_target05_risk05",
+      "strategy": "H2_momentum_1d",
+      "target": 0.005,
+      "risk": 0.005
+    },
+    {
+      "id": "H3_1h_target05_risk05",
+      "strategy": "H3_breakout_1h",
+      "target": 0.005,
+      "risk": 0.005
+    }
+  ],
+  "additional_strategies": [
+    {
+      "id": "H3_breakout_1h",
+      "kind": "breakout",
+      "bar_hours": 1,
+      "lookback": 20,
+      "atr_period": 14,
+      "stop_atr": 2.0,
+      "max_hold_bars": 48
+    }
+  ],
+  "predeclared_questions": [
+    "How much of H1 loss comes from price versus fees, fill friction and funding?",
+    "How much actual exposure, initial margin and planned risk did each old rule use?",
+    "Were net targets too far from entry given the quantity, stop and holding horizon?",
+    "Does reducing the target alone improve the existing rule on development data?",
+    "How does smaller planned risk interact with minimum lots and attainable frequency?",
+    "Does a single predeclared hourly breakout offer evidence to justify finer-timeframe research?"
+  ],
+  "limitations": [
+    "All variants are development diagnostics on already inspected data; no new independent profitability claim.",
+    "June-July validation is not rerun for new variants; August-September remains reserved.",
+    "No changes to signal parameters or leverage cap after observing results.",
+    "Hourly OHLC cannot substantiate 50 trades per day for a sequential single-position system.",
+    "Smaller risk changes instrument eligibility and trade selection through lot rounding, not just position size."
+  ]
+}

@@ -1,5 +1,7 @@
 # Replanteamiento del bot con capital inicial de 50 USD
 
+**Nota posterior del 6 de octubre de 2026:** el usuario permite considerar hasta 25x de nominal respecto al margen asignado en cruzado, con techo del 40 % de cuenta como margen, sujeto a elegibilidad y a un control de riesgo ligado al beneficio neto esperado. Consultar `docs/criterios-operativos-vigentes-2026-10-06.md`. La viabilidad del lote sigue calculándose desde el presupuesto de pérdida, costes y margen de cada operación; el apalancamiento disponible no obliga a utilizar toda la cuenta.
+
 **Fecha:** 5 de octubre de 2026
 **Estado:** nueva base de diseño e investigación; no autoriza operar ni cambia la configuración de Astra.
 

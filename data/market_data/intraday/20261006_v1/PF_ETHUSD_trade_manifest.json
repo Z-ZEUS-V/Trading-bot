@@ -1,0 +1,1247 @@
+{
+  "symbol": "PF_ETHUSD",
+  "kind": "trade",
+  "step_seconds": 60,
+  "points": 177120,
+  "expected_points": 177120,
+  "missing_count": 0,
+  "missing_timestamps": [],
+  "invalid_count": 0,
+  "invalid_timestamps": [],
+  "duplicates": 0,
+  "zero_volume_bars": 7288,
+  "file": "PF_ETHUSD_trade.csv.gz",
+  "sha256": "2707e8454e841175dc32421abf282e991803efc76db6535fabc915ed47cba946",
+  "requests": [
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.19110002741218,
+      "captured_at_utc": "2026-10-06T02:16:02.420968+00:00",
+      "response_sha256": "2e5e83e2a385c38e56e559dfc45e3a8c81e48f87b71c5858ba0a4d04c7f41da4",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1774915200&to=1775001599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1774915200_1775001600.json.gz",
+      "from": "2026-03-31T00:00:00+00:00",
+      "to_exclusive": "2026-04-01T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.14740004390478,
+      "captured_at_utc": "2026-10-06T02:16:02.822238+00:00",
+      "response_sha256": "4be7622286e8a7d49348d85d18b8b1785191c1a7410574806e2ae28c56222f14",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775001600&to=1775087999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775001600_1775088000.json.gz",
+      "from": "2026-04-01T00:00:00+00:00",
+      "to_exclusive": "2026-04-02T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 114.24479982815683,
+      "captured_at_utc": "2026-10-06T02:16:03.220088+00:00",
+      "response_sha256": "f885c14f79e1c7988d3e61cc0d9d07691f88ef4c64a5d26b3da15dc42499812a",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775088000&to=1775174399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775088000_1775174400.json.gz",
+      "from": "2026-04-02T00:00:00+00:00",
+      "to_exclusive": "2026-04-03T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.97289988398552,
+      "captured_at_utc": "2026-10-06T02:16:03.628954+00:00",
+      "response_sha256": "00698660c5ada81dec08434cd1cece63b76fc236a3e42f241242834b471c24ec",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775174400&to=1775260799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775174400_1775260800.json.gz",
+      "from": "2026-04-03T00:00:00+00:00",
+      "to_exclusive": "2026-04-04T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.18519989214838,
+      "captured_at_utc": "2026-10-06T02:16:04.028962+00:00",
+      "response_sha256": "7af6a2e611bad71a7ec7220805c38af15a4e9b07eeef826e443a89653767d042",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775260800&to=1775347199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775260800_1775347200.json.gz",
+      "from": "2026-04-04T00:00:00+00:00",
+      "to_exclusive": "2026-04-05T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.26429984346032,
+      "captured_at_utc": "2026-10-06T02:16:04.430972+00:00",
+      "response_sha256": "7e438669f6f4e3a2312c2961c9c260315b5cf9382a27251322498d8fee1382da",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775347200&to=1775433599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775347200_1775433600.json.gz",
+      "from": "2026-04-05T00:00:00+00:00",
+      "to_exclusive": "2026-04-06T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 115.06590014323592,
+      "captured_at_utc": "2026-10-06T02:16:04.825395+00:00",
+      "response_sha256": "8823346fd4d4714d4bbcf2347f079ac37f0c89ac1e98266ea94afca0b34735e9",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775433600&to=1775519999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775433600_1775520000.json.gz",
+      "from": "2026-04-06T00:00:00+00:00",
+      "to_exclusive": "2026-04-07T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 118.56460012495518,
+      "captured_at_utc": "2026-10-06T02:16:05.230681+00:00",
+      "response_sha256": "0212b8e416ec52415014f274b7dd8e9d94c18716bac7c8848f9a1a5691f067b3",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775520000&to=1775606399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775520000_1775606400.json.gz",
+      "from": "2026-04-07T00:00:00+00:00",
+      "to_exclusive": "2026-04-08T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 124.30049991235137,
+      "captured_at_utc": "2026-10-06T02:16:05.637384+00:00",
+      "response_sha256": "048dc45527f585bc2e4c8595aa0796c769430586389f2268a0197a623c866598",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775606400&to=1775692799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775606400_1775692800.json.gz",
+      "from": "2026-04-08T00:00:00+00:00",
+      "to_exclusive": "2026-04-09T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 111.72479996457696,
+      "captured_at_utc": "2026-10-06T02:16:06.026248+00:00",
+      "response_sha256": "0ce1d061d9004caebbeff6b5e21b2b32ed6344cc5d0a5cecaa69102f6cec091f",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775692800&to=1775779199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775692800_1775779200.json.gz",
+      "from": "2026-04-09T00:00:00+00:00",
+      "to_exclusive": "2026-04-10T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 125.76529989019036,
+      "captured_at_utc": "2026-10-06T02:16:06.440447+00:00",
+      "response_sha256": "745707d7e6c91e38b1cf6fa14dd2f3881c7aa2cbdfb4adf41cd83ca83b3d0995",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775779200&to=1775865599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775779200_1775865600.json.gz",
+      "from": "2026-04-10T00:00:00+00:00",
+      "to_exclusive": "2026-04-11T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.30729986913502,
+      "captured_at_utc": "2026-10-06T02:16:06.837063+00:00",
+      "response_sha256": "dfc2b8ed238306293d2edab537232d51e62d0bd32fb3d90889f9d47de624cdc6",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775865600&to=1775951999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775865600_1775952000.json.gz",
+      "from": "2026-04-11T00:00:00+00:00",
+      "to_exclusive": "2026-04-12T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 129.21620020642877,
+      "captured_at_utc": "2026-10-06T02:16:07.246360+00:00",
+      "response_sha256": "85166f93e10c1e5de80abf857fccc53086b127937960518e11982166a7d34f49",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1775952000&to=1776038399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1775952000_1776038400.json.gz",
+      "from": "2026-04-12T00:00:00+00:00",
+      "to_exclusive": "2026-04-13T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 114.69050007872283,
+      "captured_at_utc": "2026-10-06T02:16:07.633617+00:00",
+      "response_sha256": "35c7b67c5ef8de310ec8b63ebedd32e4f858037e61fa029da6707cf9fa8bfed9",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776038400&to=1776124799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776038400_1776124800.json.gz",
+      "from": "2026-04-13T00:00:00+00:00",
+      "to_exclusive": "2026-04-14T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.76439992152154,
+      "captured_at_utc": "2026-10-06T02:16:08.036686+00:00",
+      "response_sha256": "044329cb25f32fda07a0aec8f8c49d379afaac25ba2ee16d2ae95306882fa6d8",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776124800&to=1776211199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776124800_1776211200.json.gz",
+      "from": "2026-04-14T00:00:00+00:00",
+      "to_exclusive": "2026-04-15T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 118.4258998837322,
+      "captured_at_utc": "2026-10-06T02:16:08.438903+00:00",
+      "response_sha256": "b6dbf3535298b4dc9969b214046527afeba083c65272bffa527e1f997a2e2d3e",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776211200&to=1776297599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776211200_1776297600.json.gz",
+      "from": "2026-04-15T00:00:00+00:00",
+      "to_exclusive": "2026-04-16T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.19319992698729,
+      "captured_at_utc": "2026-10-06T02:16:08.837839+00:00",
+      "response_sha256": "6defcac1c7dbc1e9a99e45c6c23e225d9bfa6edad400c995c6ed0633cac7b58f",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776297600&to=1776383999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776297600_1776384000.json.gz",
+      "from": "2026-04-16T00:00:00+00:00",
+      "to_exclusive": "2026-04-17T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.21430016122758,
+      "captured_at_utc": "2026-10-06T02:16:09.244294+00:00",
+      "response_sha256": "712a9eb136bdc69cd4160712ea9019a9eaaa3ed458bf50ba362acf3b52fe803c",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776384000&to=1776470399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776384000_1776470400.json.gz",
+      "from": "2026-04-17T00:00:00+00:00",
+      "to_exclusive": "2026-04-18T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.35590000636876,
+      "captured_at_utc": "2026-10-06T02:16:09.646973+00:00",
+      "response_sha256": "795ceb5e4c503fbbbb90756e7144c6c64a005a5f1f7b8366b3e453e769dca818",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776470400&to=1776556799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776470400_1776556800.json.gz",
+      "from": "2026-04-18T00:00:00+00:00",
+      "to_exclusive": "2026-04-19T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 115.11389981023967,
+      "captured_at_utc": "2026-10-06T02:16:10.040599+00:00",
+      "response_sha256": "2e14700d0cdecaebe6e7a955bfe40af03193b614fe3bf28b539dc1348c107257",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776556800&to=1776643199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776556800_1776643200.json.gz",
+      "from": "2026-04-19T00:00:00+00:00",
+      "to_exclusive": "2026-04-20T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.57149999216199,
+      "captured_at_utc": "2026-10-06T02:16:10.445799+00:00",
+      "response_sha256": "f271358d37767a8344c50b04f3a96b49cf17f6ffc78e789ef18d8c06e92c3044",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776643200&to=1776729599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776643200_1776729600.json.gz",
+      "from": "2026-04-20T00:00:00+00:00",
+      "to_exclusive": "2026-04-21T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.4888999927789,
+      "captured_at_utc": "2026-10-06T02:16:10.846626+00:00",
+      "response_sha256": "a6aa7450cc350ac26c2d2847d672f1d4533904a468e4c2a3bab80522e794dc6b",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776729600&to=1776815999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776729600_1776816000.json.gz",
+      "from": "2026-04-21T00:00:00+00:00",
+      "to_exclusive": "2026-04-22T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.07379990629852,
+      "captured_at_utc": "2026-10-06T02:16:11.247777+00:00",
+      "response_sha256": "d085ec1aa58e5cae8b9eacbc084515dd2f5b7f819ff98b40619f972040b1bd81",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776816000&to=1776902399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776816000_1776902400.json.gz",
+      "from": "2026-04-22T00:00:00+00:00",
+      "to_exclusive": "2026-04-23T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 111.93059990182519,
+      "captured_at_utc": "2026-10-06T02:16:11.638712+00:00",
+      "response_sha256": "80c4258d24a41384ed098c7189743bb333090b012fc4c0a3c99f7408ba273f4c",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776902400&to=1776988799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776902400_1776988800.json.gz",
+      "from": "2026-04-23T00:00:00+00:00",
+      "to_exclusive": "2026-04-24T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.02700012736022,
+      "captured_at_utc": "2026-10-06T02:16:12.045359+00:00",
+      "response_sha256": "37e9916e53321ed5e7ed3289a568eb8fe3754c4b1965a4e024466f48d3e207eb",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1776988800&to=1777075199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1776988800_1777075200.json.gz",
+      "from": "2026-04-24T00:00:00+00:00",
+      "to_exclusive": "2026-04-25T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 112.66570002771914,
+      "captured_at_utc": "2026-10-06T02:16:12.436589+00:00",
+      "response_sha256": "df44154b7b94b1a5ce07a0e1c91efbb373f25bfde53208d0ca26663786507411",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1777075200&to=1777161599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1777075200_1777161600.json.gz",
+      "from": "2026-04-25T00:00:00+00:00",
+      "to_exclusive": "2026-04-26T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.14159981906414,
+      "captured_at_utc": "2026-10-06T02:16:12.847360+00:00",
+      "response_sha256": "b1e5e7a55cd68620a2ca374c20d749d1692702eedb0cc2551ce1dc7f29a73534",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1777161600&to=1777247999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1777161600_1777248000.json.gz",
+      "from": "2026-04-26T00:00:00+00:00",
+      "to_exclusive": "2026-04-27T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.84039985388517,
+      "captured_at_utc": "2026-10-06T02:16:13.247335+00:00",
+      "response_sha256": "e6a96eb2bee1126055f9c7a8ed4fd4b833833206a33c4f603d8bbd5cc5d5fec6",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1777248000&to=1777334399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1777248000_1777334400.json.gz",
+      "from": "2026-04-27T00:00:00+00:00",
+      "to_exclusive": "2026-04-28T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.68720005825162,
+      "captured_at_utc": "2026-10-06T02:16:13.645465+00:00",
+      "response_sha256": "d72de6297fdc50d745524b8186a86575b446d181d2fe9aaa0b2ead540c66267c",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1777334400&to=1777420799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1777334400_1777420800.json.gz",
+      "from": "2026-04-28T00:00:00+00:00",
+      "to_exclusive": "2026-04-29T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.63550001382828,
+      "captured_at_utc": "2026-10-06T02:16:14.046142+00:00",
+      "response_sha256": "94ec8e13d1abab0505b36e4131ca1d0fb3ee957efbbe135c80e05b7586f0d1b3",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1777420800&to=1777507199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1777420800_1777507200.json.gz",
+      "from": "2026-04-29T00:00:00+00:00",
+      "to_exclusive": "2026-04-30T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.76919998414814,
+      "captured_at_utc": "2026-10-06T02:16:14.447266+00:00",
+      "response_sha256": "825780e6e06c9f2c63233a23da7891352d6088695aa66a657cd07521188e34f1",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1777507200&to=1777593599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1777507200_1777593600.json.gz",
+      "from": "2026-04-30T00:00:00+00:00",
+      "to_exclusive": "2026-05-01T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 110.56900001130998,
+      "captured_at_utc": "2026-10-06T02:16:14.838236+00:00",
+      "response_sha256": "74a9524009c8a5bfd23a5d32e5318ecc66983c64e4d1650739f9bdc81d1eb35f",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1777593600&to=1777679999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1777593600_1777680000.json.gz",
+      "from": "2026-05-01T00:00:00+00:00",
+      "to_exclusive": "2026-05-02T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.1765999905765,
+      "captured_at_utc": "2026-10-06T02:16:15.249954+00:00",
+      "response_sha256": "43700b4a17028e703c7a3ecf834d5306d7c1d50daa82450939e4609929d40574",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1777680000&to=1777766399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1777680000_1777766400.json.gz",
+      "from": "2026-05-02T00:00:00+00:00",
+      "to_exclusive": "2026-05-03T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 112.10809997282922,
+      "captured_at_utc": "2026-10-06T02:16:15.642363+00:00",
+      "response_sha256": "1c9cb3586cec18196644c3cbd1b5c9244a6111ad9cd54f75bf459978b771b922",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1777766400&to=1777852799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1777766400_1777852800.json.gz",
+      "from": "2026-05-03T00:00:00+00:00",
+      "to_exclusive": "2026-05-04T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.66020001657307,
+      "captured_at_utc": "2026-10-06T02:16:16.051160+00:00",
+      "response_sha256": "70a06ca10154deb51b349ecac44ca312186a29ddbffa82d5dc515d8a1b438563",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1777852800&to=1777939199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1777852800_1777939200.json.gz",
+      "from": "2026-05-04T00:00:00+00:00",
+      "to_exclusive": "2026-05-05T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 127.39529996179044,
+      "captured_at_utc": "2026-10-06T02:16:16.458467+00:00",
+      "response_sha256": "9c8606732159eb2baceb13087b2cd84ca17705e90e9723bb6967d77f56e6e36c",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1777939200&to=1778025599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1777939200_1778025600.json.gz",
+      "from": "2026-05-05T00:00:00+00:00",
+      "to_exclusive": "2026-05-06T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.34709987044334,
+      "captured_at_utc": "2026-10-06T02:16:16.855608+00:00",
+      "response_sha256": "62db1c1bf94274e8c0cdc62e2759c2c1f9194e7ec8c57d236e04ae92f9ce7c33",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778025600&to=1778111999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778025600_1778112000.json.gz",
+      "from": "2026-05-06T00:00:00+00:00",
+      "to_exclusive": "2026-05-07T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.11829989589751,
+      "captured_at_utc": "2026-10-06T02:16:17.254099+00:00",
+      "response_sha256": "afe244f6c70065fbdb7ae5cff8ee11b53a8a3c3afc1f85b95a22c184489f3dc9",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778112000&to=1778198399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778112000_1778198400.json.gz",
+      "from": "2026-05-07T00:00:00+00:00",
+      "to_exclusive": "2026-05-08T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 115.55460002273321,
+      "captured_at_utc": "2026-10-06T02:16:17.648459+00:00",
+      "response_sha256": "a150022bb6288516ecba099e31b424eb8de398d67489438f0d46c9585bbc6068",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778198400&to=1778284799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778198400_1778284800.json.gz",
+      "from": "2026-05-08T00:00:00+00:00",
+      "to_exclusive": "2026-05-09T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.48409999907017,
+      "captured_at_utc": "2026-10-06T02:16:18.050348+00:00",
+      "response_sha256": "fc7990c713196d750752753ae858e160fd7a750b4c504965c95bfe3e3dfc045d",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778284800&to=1778371199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778284800_1778371200.json.gz",
+      "from": "2026-05-09T00:00:00+00:00",
+      "to_exclusive": "2026-05-10T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.10149993188679,
+      "captured_at_utc": "2026-10-06T02:16:18.456515+00:00",
+      "response_sha256": "1d690d2b4a0584e653afb68d8f00598f4f55924b5859acdf0667a90af340bd07",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778371200&to=1778457599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778371200_1778457600.json.gz",
+      "from": "2026-05-10T00:00:00+00:00",
+      "to_exclusive": "2026-05-11T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 115.92760006897151,
+      "captured_at_utc": "2026-10-06T02:16:18.850835+00:00",
+      "response_sha256": "5438a6cfed9055102b7e7de6041cf619aa218e5be81381f4a0d6b6e339e63a8a",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778457600&to=1778543999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778457600_1778544000.json.gz",
+      "from": "2026-05-11T00:00:00+00:00",
+      "to_exclusive": "2026-05-12T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 133.22580000385642,
+      "captured_at_utc": "2026-10-06T02:16:19.269206+00:00",
+      "response_sha256": "9bc2918895578a8a38da8312ae384ad4c3bcebb4b52542160a2ad4957722b6ca",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778544000&to=1778630399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778544000_1778630400.json.gz",
+      "from": "2026-05-12T00:00:00+00:00",
+      "to_exclusive": "2026-05-13T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.73180009610951,
+      "captured_at_utc": "2026-10-06T02:16:19.657965+00:00",
+      "response_sha256": "c1f259019b7adc853e95415d8d77a1e74deb4189c53fcd0eb1e17b94ce164b8b",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778630400&to=1778716799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778630400_1778716800.json.gz",
+      "from": "2026-05-13T00:00:00+00:00",
+      "to_exclusive": "2026-05-14T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 115.0004998780787,
+      "captured_at_utc": "2026-10-06T02:16:20.052249+00:00",
+      "response_sha256": "d5b00491eb7c662de6204d09a3b99e119d5c3eb0025a6ca844bfc237329144e0",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778716800&to=1778803199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778716800_1778803200.json.gz",
+      "from": "2026-05-14T00:00:00+00:00",
+      "to_exclusive": "2026-05-15T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 128.20519995875657,
+      "captured_at_utc": "2026-10-06T02:16:20.466484+00:00",
+      "response_sha256": "5ebaa62e6be36781e7c87f87cb2300c8d1c016a898b1101b7d08a552d7f295bb",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778803200&to=1778889599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778803200_1778889600.json.gz",
+      "from": "2026-05-15T00:00:00+00:00",
+      "to_exclusive": "2026-05-16T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.28199999965727,
+      "captured_at_utc": "2026-10-06T02:16:20.858944+00:00",
+      "response_sha256": "98f011946b28d9f3c649c864c2b5e6dd227b293f7fa31f0aea10a9739b94282c",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778889600&to=1778975999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778889600_1778976000.json.gz",
+      "from": "2026-05-16T00:00:00+00:00",
+      "to_exclusive": "2026-05-17T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.27160012722015,
+      "captured_at_utc": "2026-10-06T02:16:21.256555+00:00",
+      "response_sha256": "b0a08c6eb26057f449fa6f803f8877ed4b8ca625f130bd6f9550e86bad286c37",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1778976000&to=1779062399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1778976000_1779062400.json.gz",
+      "from": "2026-05-17T00:00:00+00:00",
+      "to_exclusive": "2026-05-18T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 127.17269989661872,
+      "captured_at_utc": "2026-10-06T02:16:21.669305+00:00",
+      "response_sha256": "7a75a200a0a028d34f3b38d0385a36cd1847d23af78f2175acec01fbc3abeccb",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1779062400&to=1779148799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1779062400_1779148800.json.gz",
+      "from": "2026-05-18T00:00:00+00:00",
+      "to_exclusive": "2026-05-19T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 118.2921000290662,
+      "captured_at_utc": "2026-10-06T02:16:22.061969+00:00",
+      "response_sha256": "8f95e651d5e1386cac67458523e4dc2c3545c385bb71fd7032bd7b17a8f45728",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1779148800&to=1779235199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1779148800_1779235200.json.gz",
+      "from": "2026-05-19T00:00:00+00:00",
+      "to_exclusive": "2026-05-20T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 124.68170002102852,
+      "captured_at_utc": "2026-10-06T02:16:22.470143+00:00",
+      "response_sha256": "683b599545741200abfd8bd0aa2b9a856108dc9bd6eea072e17480a24e9b914b",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1779235200&to=1779321599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1779235200_1779321600.json.gz",
+      "from": "2026-05-20T00:00:00+00:00",
+      "to_exclusive": "2026-05-21T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.79069989360869,
+      "captured_at_utc": "2026-10-06T02:16:22.868505+00:00",
+      "response_sha256": "6bf31917061732adff164f0db958b6ca66bdac687ffeb53cf6008007d610a70b",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1779321600&to=1779407999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1779321600_1779408000.json.gz",
+      "from": "2026-05-21T00:00:00+00:00",
+      "to_exclusive": "2026-05-22T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 134.1555998660624,
+      "captured_at_utc": "2026-10-06T02:16:23.281612+00:00",
+      "response_sha256": "ff51b6eb39c515a14644b4758c239e540b05df0b9c11963bd377d6bd03eb79ae",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1779408000&to=1779494399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1779408000_1779494400.json.gz",
+      "from": "2026-05-22T00:00:00+00:00",
+      "to_exclusive": "2026-05-23T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.75349995493889,
+      "captured_at_utc": "2026-10-06T02:16:23.665946+00:00",
+      "response_sha256": "2acaa261e8ee6184c03820dd4620e440718e9e1343247e86f16ffdc7c7dcabd6",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1779494400&to=1779580799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1779494400_1779580800.json.gz",
+      "from": "2026-05-23T00:00:00+00:00",
+      "to_exclusive": "2026-05-24T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.58579988963902,
+      "captured_at_utc": "2026-10-06T02:16:24.067700+00:00",
+      "response_sha256": "afb4c345e303a6db866634ad673f9a2ede7566e8ff47315e924d61e08c45572c",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1779580800&to=1779667199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1779580800_1779667200.json.gz",
+      "from": "2026-05-24T00:00:00+00:00",
+      "to_exclusive": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 118.7380999326706,
+      "captured_at_utc": "2026-10-06T02:16:24.471135+00:00",
+      "response_sha256": "e469053a92184e1c330292c1796da14cc19e8ca08a56ac36e9e97694cda40fc6",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1779667200&to=1779753599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1779667200_1779753600.json.gz",
+      "from": "2026-05-25T00:00:00+00:00",
+      "to_exclusive": "2026-05-26T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.50899983942509,
+      "captured_at_utc": "2026-10-06T02:16:24.869295+00:00",
+      "response_sha256": "445e7bd71967879d75c35d4b23b0f3c9b56279364e9da3592a682206e562726b",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1779753600&to=1779839999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1779753600_1779840000.json.gz",
+      "from": "2026-05-26T00:00:00+00:00",
+      "to_exclusive": "2026-05-27T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 113.20700007490814,
+      "captured_at_utc": "2026-10-06T02:16:25.063945+00:00",
+      "response_sha256": "04baedd217fa3ffc9b7222b17c6be538eb8c53d88561074bb85f44a18f081bff",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1779840000&to=1779926399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1779840000_1779926400.json.gz",
+      "from": "2026-05-27T00:00:00+00:00",
+      "to_exclusive": "2026-05-28T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 115.0162999983877,
+      "captured_at_utc": "2026-10-06T02:16:25.467594+00:00",
+      "response_sha256": "56a3601a0be7c08470942004467d8d25cc87d296fc473d2dd91d87e4f3ec2f0e",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1779926400&to=1780012799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1779926400_1780012800.json.gz",
+      "from": "2026-05-28T00:00:00+00:00",
+      "to_exclusive": "2026-05-29T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 118.94530011340976,
+      "captured_at_utc": "2026-10-06T02:16:25.871891+00:00",
+      "response_sha256": "78e57967993e9523448f4adac57bdb7671df6bbac5d1d92bba130f95698d592e",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780012800&to=1780099199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780012800_1780099200.json.gz",
+      "from": "2026-05-29T00:00:00+00:00",
+      "to_exclusive": "2026-05-30T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.97520006075501,
+      "captured_at_utc": "2026-10-06T02:16:26.271541+00:00",
+      "response_sha256": "d8a8bf4869aa70c6a05e081132dd1348aa81771aac5c775e84b4eb310fd0b4b0",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780099200&to=1780185599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780099200_1780185600.json.gz",
+      "from": "2026-05-30T00:00:00+00:00",
+      "to_exclusive": "2026-05-31T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.74870015121996,
+      "captured_at_utc": "2026-10-06T02:16:26.671775+00:00",
+      "response_sha256": "60e27a5874ed89ce7834682669f38525457f14f1c15fcc10fb2533268d2a3933",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780185600&to=1780271999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780185600_1780272000.json.gz",
+      "from": "2026-05-31T00:00:00+00:00",
+      "to_exclusive": "2026-06-01T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.21119992621243,
+      "captured_at_utc": "2026-10-06T02:16:27.075317+00:00",
+      "response_sha256": "d9b5d644ad70ade86a0eb64859a09c96f620a30116a2fcbb0d4e10c0c42130d1",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780272000&to=1780358399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780272000_1780358400.json.gz",
+      "from": "2026-06-01T00:00:00+00:00",
+      "to_exclusive": "2026-06-02T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.58170000091195,
+      "captured_at_utc": "2026-10-06T02:16:27.477918+00:00",
+      "response_sha256": "6f4282647635284ad69498fd0c8486d513e1f1d87380099492e2280168d90d09",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780358400&to=1780444799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780358400_1780444800.json.gz",
+      "from": "2026-06-02T00:00:00+00:00",
+      "to_exclusive": "2026-06-03T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.41860008239746,
+      "captured_at_utc": "2026-10-06T02:16:27.874905+00:00",
+      "response_sha256": "a0ea3f0476d594476dd4162667b6403760b098a13c059fddca7729348f8e3afd",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780444800&to=1780531199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780444800_1780531200.json.gz",
+      "from": "2026-06-03T00:00:00+00:00",
+      "to_exclusive": "2026-06-04T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 150.60819988138974,
+      "captured_at_utc": "2026-10-06T02:16:28.311055+00:00",
+      "response_sha256": "f8e6a1f0170b3af3cb2452e0e3ae79f7e8883cea1dd5ad1a88d02884401c77f4",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780531200&to=1780617599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780531200_1780617600.json.gz",
+      "from": "2026-06-04T00:00:00+00:00",
+      "to_exclusive": "2026-06-05T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.22299987822771,
+      "captured_at_utc": "2026-10-06T02:16:28.682070+00:00",
+      "response_sha256": "7fdc099db09f1dd9c7fd2e5f490a8fdfb291174411ff63d4ddbc3d9f5e67b648",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780617600&to=1780703999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780617600_1780704000.json.gz",
+      "from": "2026-06-05T00:00:00+00:00",
+      "to_exclusive": "2026-06-06T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 118.8384999986738,
+      "captured_at_utc": "2026-10-06T02:16:29.080490+00:00",
+      "response_sha256": "01dbba33c16bbf7b211eae9dc1d7bb8dd34f827d725fbc7e59e1842cb885ed51",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780704000&to=1780790399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780704000_1780790400.json.gz",
+      "from": "2026-06-06T00:00:00+00:00",
+      "to_exclusive": "2026-06-07T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.68100017495453,
+      "captured_at_utc": "2026-10-06T02:16:29.482765+00:00",
+      "response_sha256": "56e86ca2b9ac7c455810359a7eec7a9f8b1a68f6a84b5b4a0f8e6a78a67b17dc",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780790400&to=1780876799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780790400_1780876800.json.gz",
+      "from": "2026-06-07T00:00:00+00:00",
+      "to_exclusive": "2026-06-08T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 127.4057999253273,
+      "captured_at_utc": "2026-10-06T02:16:29.890562+00:00",
+      "response_sha256": "f4c414fb4842cb4c69642a0844b4960a9ec83822f57658f91e7321a90cf16125",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780876800&to=1780963199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780876800_1780963200.json.gz",
+      "from": "2026-06-08T00:00:00+00:00",
+      "to_exclusive": "2026-06-09T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 113.79490001127124,
+      "captured_at_utc": "2026-10-06T02:16:30.276638+00:00",
+      "response_sha256": "d43d963755923b2ef2d44f75b11e1573adce3002c0c16a1f9a4d0a32db1da3c2",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1780963200&to=1781049599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1780963200_1781049600.json.gz",
+      "from": "2026-06-09T00:00:00+00:00",
+      "to_exclusive": "2026-06-10T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.66140009462833,
+      "captured_at_utc": "2026-10-06T02:16:30.684856+00:00",
+      "response_sha256": "38310e310e3157892a6b5a1c9bfc48d51b2add9e21542e43e84e00b2a8755501",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1781049600&to=1781135999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1781049600_1781136000.json.gz",
+      "from": "2026-06-10T00:00:00+00:00",
+      "to_exclusive": "2026-06-11T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.04209989309311,
+      "captured_at_utc": "2026-10-06T02:16:31.081981+00:00",
+      "response_sha256": "ad2e64f10d22ece57f5e15c56d8ccd6bca16137132a024dc178eb08f0f0d06b5",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1781136000&to=1781222399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1781136000_1781222400.json.gz",
+      "from": "2026-06-11T00:00:00+00:00",
+      "to_exclusive": "2026-06-12T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.8990998826921,
+      "captured_at_utc": "2026-10-06T02:16:31.490409+00:00",
+      "response_sha256": "4542793a65e0955bcc24b1329e187131ba841e46850f08d7204321a456d9d506",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1781222400&to=1781308799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1781222400_1781308800.json.gz",
+      "from": "2026-06-12T00:00:00+00:00",
+      "to_exclusive": "2026-06-13T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.20840011164546,
+      "captured_at_utc": "2026-10-06T02:16:31.883680+00:00",
+      "response_sha256": "d86d3482c6146066cb3defaad9163d405490bf65a273e1294953a79aa5f9d3ff",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1781308800&to=1781395199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1781308800_1781395200.json.gz",
+      "from": "2026-06-13T00:00:00+00:00",
+      "to_exclusive": "2026-06-14T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.41889999434352,
+      "captured_at_utc": "2026-10-06T02:16:32.287351+00:00",
+      "response_sha256": "0ac530594e1944982554054e983875c25787fc19a2fd5d7b6b93640aa8b7d8c0",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1781395200&to=1781481599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1781395200_1781481600.json.gz",
+      "from": "2026-06-14T00:00:00+00:00",
+      "to_exclusive": "2026-06-15T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.17890002951026,
+      "captured_at_utc": "2026-10-06T02:16:32.687615+00:00",
+      "response_sha256": "50c46c34633fd0ad185c05be968fdadb5802ea21d4ea7e1d42dade3b993f9102",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1781481600&to=1781567999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1781481600_1781568000.json.gz",
+      "from": "2026-06-15T00:00:00+00:00",
+      "to_exclusive": "2026-06-16T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 136.68660004623234,
+      "captured_at_utc": "2026-10-06T02:16:33.106763+00:00",
+      "response_sha256": "f15de8ca25d4b306fcda23fc48fb6a666adcb94afe5ba0306486319c05aef2d1",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1781568000&to=1781654399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1781568000_1781654400.json.gz",
+      "from": "2026-06-16T00:00:00+00:00",
+      "to_exclusive": "2026-06-17T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 113.18910005502403,
+      "captured_at_utc": "2026-10-06T02:16:33.483010+00:00",
+      "response_sha256": "8c42f6c7177692b59c123da42028f6a36cbe52be0fbf154e1267c0779f290b27",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1781654400&to=1781740799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1781654400_1781740800.json.gz",
+      "from": "2026-06-17T00:00:00+00:00",
+      "to_exclusive": "2026-06-18T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.91860005259514,
+      "captured_at_utc": "2026-10-06T02:16:33.893083+00:00",
+      "response_sha256": "7114648ea588e809b83b5153d1d7d9e94f04b49792dc8222adcfab21361a6378",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1781740800&to=1781827199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1781740800_1781827200.json.gz",
+      "from": "2026-06-18T00:00:00+00:00",
+      "to_exclusive": "2026-06-19T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.98259988427162,
+      "captured_at_utc": "2026-10-06T02:16:34.289475+00:00",
+      "response_sha256": "0da0eb49d1dfed4fad5897e860a90bd7b529d4b5c307460f4cf8d9a9fd3fa7b0",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1781827200&to=1781913599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1781827200_1781913600.json.gz",
+      "from": "2026-06-19T00:00:00+00:00",
+      "to_exclusive": "2026-06-20T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 125.25419984012842,
+      "captured_at_utc": "2026-10-06T02:16:34.697091+00:00",
+      "response_sha256": "e4e0610e20e31d5d4be90b65de0a4bf4d806bb0c4711b3d2650f9138d86bb378",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1781913600&to=1781999999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1781913600_1782000000.json.gz",
+      "from": "2026-06-20T00:00:00+00:00",
+      "to_exclusive": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 146.16030012257397,
+      "captured_at_utc": "2026-10-06T02:16:35.119464+00:00",
+      "response_sha256": "a435879ec18cf9a504536b81b08b4eccdc99f5fa4c197e673d42df085ac4e8b2",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782000000&to=1782086399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782000000_1782086400.json.gz",
+      "from": "2026-06-21T00:00:00+00:00",
+      "to_exclusive": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.92520000785589,
+      "captured_at_utc": "2026-10-06T02:16:35.494663+00:00",
+      "response_sha256": "9043b130abcea832005d5ecbbc6f5c6a3fc8a39dc4f532447199b3252c1f7c4c",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782086400&to=1782172799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782086400_1782172800.json.gz",
+      "from": "2026-06-22T00:00:00+00:00",
+      "to_exclusive": "2026-06-23T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.0095999520272,
+      "captured_at_utc": "2026-10-06T02:16:35.894698+00:00",
+      "response_sha256": "a051e2cf946f91f520c5be43e602008e7f517cd7f29c2f5be80b20910ab97444",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782172800&to=1782259199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782172800_1782259200.json.gz",
+      "from": "2026-06-23T00:00:00+00:00",
+      "to_exclusive": "2026-06-24T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 114.68950007110834,
+      "captured_at_utc": "2026-10-06T02:16:36.290027+00:00",
+      "response_sha256": "310e57fca3fba5d72fc9d5d76f8d5e9a9ea39b55a35c456e621ab17cf05fa9db",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782259200&to=1782345599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782259200_1782345600.json.gz",
+      "from": "2026-06-24T00:00:00+00:00",
+      "to_exclusive": "2026-06-25T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.12489994615316,
+      "captured_at_utc": "2026-10-06T02:16:36.697298+00:00",
+      "response_sha256": "c6b7620fd9dc063799b1e8c571e4c3b459e3509075d6f6a527a41f0153ed7bd4",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782345600&to=1782431999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782345600_1782432000.json.gz",
+      "from": "2026-06-25T00:00:00+00:00",
+      "to_exclusive": "2026-06-26T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.03649985045195,
+      "captured_at_utc": "2026-10-06T02:16:37.092305+00:00",
+      "response_sha256": "b578618b3ad17e5dcd8fbe7557d7bab134edb3b8581fa35ca0d76835042954a0",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782432000&to=1782518399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782432000_1782518400.json.gz",
+      "from": "2026-06-26T00:00:00+00:00",
+      "to_exclusive": "2026-06-27T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 124.10230003297329,
+      "captured_at_utc": "2026-10-06T02:16:37.502937+00:00",
+      "response_sha256": "3b6c5c094cb34bac57bd09d0c91a259473c76e038a3154fbc549c2ad2bd9e768",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782518400&to=1782604799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782518400_1782604800.json.gz",
+      "from": "2026-06-27T00:00:00+00:00",
+      "to_exclusive": "2026-06-28T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 118.7917001079768,
+      "captured_at_utc": "2026-10-06T02:16:37.898561+00:00",
+      "response_sha256": "5cb78c7545f88e27673900f8c48f9a9a6755b0755a92aede96db951b7b926d21",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782604800&to=1782691199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782604800_1782691200.json.gz",
+      "from": "2026-06-28T00:00:00+00:00",
+      "to_exclusive": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 113.14429994672537,
+      "captured_at_utc": "2026-10-06T02:16:38.293779+00:00",
+      "response_sha256": "9459d5ac2347e86fab19349125f27560b95f2a8e67fed823b1a28588e3506b47",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782691200&to=1782777599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782691200_1782777600.json.gz",
+      "from": "2026-06-29T00:00:00+00:00",
+      "to_exclusive": "2026-06-30T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.88059990108013,
+      "captured_at_utc": "2026-10-06T02:16:38.700729+00:00",
+      "response_sha256": "d45c2df5bf308b270c0fc079759fc59199afd4221ad90fa17996568fded03950",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782777600&to=1782863999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782777600_1782864000.json.gz",
+      "from": "2026-06-30T00:00:00+00:00",
+      "to_exclusive": "2026-07-01T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 111.84490006417036,
+      "captured_at_utc": "2026-10-06T02:16:39.093346+00:00",
+      "response_sha256": "86ada6360235f6f99ff001dc986bf4952e57788b7ca557bbaf3535f2bb00e374",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782864000&to=1782950399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782864000_1782950400.json.gz",
+      "from": "2026-07-01T00:00:00+00:00",
+      "to_exclusive": "2026-07-02T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 114.01739995926619,
+      "captured_at_utc": "2026-10-06T02:16:39.497176+00:00",
+      "response_sha256": "51637ae48f44741bb1c8a3f300597415c7a9cc3d1554332b229e93968c982fdb",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1782950400&to=1783036799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1782950400_1783036800.json.gz",
+      "from": "2026-07-02T00:00:00+00:00",
+      "to_exclusive": "2026-07-03T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 113.8913999311626,
+      "captured_at_utc": "2026-10-06T02:16:39.897820+00:00",
+      "response_sha256": "6352555dfa5a870078343623dbf0caa7c6ef02a02a55a93247b17ab7ab3abc78",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783036800&to=1783123199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783036800_1783123200.json.gz",
+      "from": "2026-07-03T00:00:00+00:00",
+      "to_exclusive": "2026-07-04T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 113.504100125283,
+      "captured_at_utc": "2026-10-06T02:16:40.298558+00:00",
+      "response_sha256": "c4de33a875a3061e887ac11c7d8b7a8b8fab9dc5f870ffeeb810b5d89b249be8",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783123200&to=1783209599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783123200_1783209600.json.gz",
+      "from": "2026-07-04T00:00:00+00:00",
+      "to_exclusive": "2026-07-05T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.85550003312528,
+      "captured_at_utc": "2026-10-06T02:16:40.703276+00:00",
+      "response_sha256": "000bd65a830a1d2ef4dcb0c5c1b2cafd3814f23e43c02516a8527a2c8732a1a3",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783209600&to=1783295999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783209600_1783296000.json.gz",
+      "from": "2026-07-05T00:00:00+00:00",
+      "to_exclusive": "2026-07-06T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 115.1209999807179,
+      "captured_at_utc": "2026-10-06T02:16:41.102583+00:00",
+      "response_sha256": "72521a4dc3a420bb90d15f8e69fa5a04530949731a44b03a6cd00f14e9540196",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783296000&to=1783382399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783296000_1783382400.json.gz",
+      "from": "2026-07-06T00:00:00+00:00",
+      "to_exclusive": "2026-07-07T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.07929996959865,
+      "captured_at_utc": "2026-10-06T02:16:41.508070+00:00",
+      "response_sha256": "bc7b036f9579f5ac9e52f01d4c5778daa9c6d757317909f6181f33450e2c2e00",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783382400&to=1783468799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783382400_1783468800.json.gz",
+      "from": "2026-07-07T00:00:00+00:00",
+      "to_exclusive": "2026-07-08T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 111.9643000420183,
+      "captured_at_utc": "2026-10-06T02:16:41.901758+00:00",
+      "response_sha256": "764960ec8a6ad675e10c0de8d064bb4ce819c7f2327b7a7d5b3b1a88c1ea424a",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783468800&to=1783555199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783468800_1783555200.json.gz",
+      "from": "2026-07-08T00:00:00+00:00",
+      "to_exclusive": "2026-07-09T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 124.51400002464652,
+      "captured_at_utc": "2026-10-06T02:16:42.314669+00:00",
+      "response_sha256": "c3053289147f59080c1c8c6945aa3a89697de131c5a480a2aff0152b24913bf7",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783555200&to=1783641599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783555200_1783641600.json.gz",
+      "from": "2026-07-09T00:00:00+00:00",
+      "to_exclusive": "2026-07-10T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.53060002997518,
+      "captured_at_utc": "2026-10-06T02:16:42.711464+00:00",
+      "response_sha256": "5d066a9f96432c462ceafe7fbd30a6691f30ee1d3143a5790c2dddda3a4bb99d",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783641600&to=1783727999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783641600_1783728000.json.gz",
+      "from": "2026-07-10T00:00:00+00:00",
+      "to_exclusive": "2026-07-11T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.67909990623593,
+      "captured_at_utc": "2026-10-06T02:16:43.115793+00:00",
+      "response_sha256": "32b729a93de65273e777be44738d435e2d5fdfda5d3a57bfe1cab65e026602f6",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783728000&to=1783814399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783728000_1783814400.json.gz",
+      "from": "2026-07-11T00:00:00+00:00",
+      "to_exclusive": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.21349999122322,
+      "captured_at_utc": "2026-10-06T02:16:43.513074+00:00",
+      "response_sha256": "4e6228110eabec4ee9120db723d8ca294960c1fc453d22a380a395f12c2808d1",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783814400&to=1783900799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783814400_1783900800.json.gz",
+      "from": "2026-07-12T00:00:00+00:00",
+      "to_exclusive": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 112.37560003064573,
+      "captured_at_utc": "2026-10-06T02:16:43.907021+00:00",
+      "response_sha256": "d964ba3841904419d08fecd4d0bc1f6560345d17d74c47b4fcc9639c3a5d5265",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783900800&to=1783987199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783900800_1783987200.json.gz",
+      "from": "2026-07-13T00:00:00+00:00",
+      "to_exclusive": "2026-07-14T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.67720007710159,
+      "captured_at_utc": "2026-10-06T02:16:44.317300+00:00",
+      "response_sha256": "7333a9d2a66fd167ccf87242c4cb77a24d0c3b702ad4470046da49533c967553",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1783987200&to=1784073599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1783987200_1784073600.json.gz",
+      "from": "2026-07-14T00:00:00+00:00",
+      "to_exclusive": "2026-07-15T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 198.5512999817729,
+      "captured_at_utc": "2026-10-06T02:16:44.794303+00:00",
+      "response_sha256": "331e29b0b494f53e0311a25823ea216790f966eb05bc53c6bc3e4a680692ca71",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1784073600&to=1784159999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1784073600_1784160000.json.gz",
+      "from": "2026-07-15T00:00:00+00:00",
+      "to_exclusive": "2026-07-16T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 139.05270001851022,
+      "captured_at_utc": "2026-10-06T02:16:45.140699+00:00",
+      "response_sha256": "57d3c1cefa22a7047ca8643e3fe41afe423f758456ee8fb7353c192868ac9bb2",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1784160000&to=1784246399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1784160000_1784246400.json.gz",
+      "from": "2026-07-16T00:00:00+00:00",
+      "to_exclusive": "2026-07-17T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.33080009557307,
+      "captured_at_utc": "2026-10-06T02:16:45.525631+00:00",
+      "response_sha256": "9a71353ed2477cf49a77dfe84e9b46ba8e08c4989470ecdcd3491ce7f040ccb0",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1784246400&to=1784332799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1784246400_1784332800.json.gz",
+      "from": "2026-07-17T00:00:00+00:00",
+      "to_exclusive": "2026-07-18T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 110.76569999568164,
+      "captured_at_utc": "2026-10-06T02:16:45.914549+00:00",
+      "response_sha256": "114767495f5875e011c5a85c93595b013ad75c7a364594156a1dc5e4ba5984c9",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1784332800&to=1784419199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1784332800_1784419200.json.gz",
+      "from": "2026-07-18T00:00:00+00:00",
+      "to_exclusive": "2026-07-19T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 111.83189996518195,
+      "captured_at_utc": "2026-10-06T02:16:46.316290+00:00",
+      "response_sha256": "43198f2c0254a82cbb9ad038782b5a2c840663e568555ecceeaf109803b29533",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1784419200&to=1784505599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1784419200_1784505600.json.gz",
+      "from": "2026-07-19T00:00:00+00:00",
+      "to_exclusive": "2026-07-20T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 115.44179986231029,
+      "captured_at_utc": "2026-10-06T02:16:46.720746+00:00",
+      "response_sha256": "726842ea7529114234de3efc257e2122b3d439342dad7f539650d8801a763c6c",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1784505600&to=1784591999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1784505600_1784592000.json.gz",
+      "from": "2026-07-20T00:00:00+00:00",
+      "to_exclusive": "2026-07-21T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.72550020739436,
+      "captured_at_utc": "2026-10-06T02:16:47.122631+00:00",
+      "response_sha256": "067078b42fd598a43f8837620075a048c3c7b188ae7f96f2c27efceda246ef3d",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1784592000&to=1784678399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1784592000_1784678400.json.gz",
+      "from": "2026-07-21T00:00:00+00:00",
+      "to_exclusive": "2026-07-22T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.93150007724762,
+      "captured_at_utc": "2026-10-06T02:16:47.525521+00:00",
+      "response_sha256": "722a4e9efe43c2eb7ef70b6c8acced80dcb5e40391a97b7d7b44a395037b9f49",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1784678400&to=1784764799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1784678400_1784764800.json.gz",
+      "from": "2026-07-22T00:00:00+00:00",
+      "to_exclusive": "2026-07-23T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.35210008919239,
+      "captured_at_utc": "2026-10-06T02:16:47.925429+00:00",
+      "response_sha256": "d7f7fd1440b4da2be4b67febd660d99fec28dc22eaf80088e19b9a4cab36260e",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1784764800&to=1784851199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1784764800_1784851200.json.gz",
+      "from": "2026-07-23T00:00:00+00:00",
+      "to_exclusive": "2026-07-24T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.33420009538531,
+      "captured_at_utc": "2026-10-06T02:16:48.329670+00:00",
+      "response_sha256": "c8f28944edc87b7ee9d9e1dfe2ae24aee3e7b610be282e704e2fad672c836235",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1784851200&to=1784937599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1784851200_1784937600.json.gz",
+      "from": "2026-07-24T00:00:00+00:00",
+      "to_exclusive": "2026-07-25T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.153599858284,
+      "captured_at_utc": "2026-10-06T02:16:48.727758+00:00",
+      "response_sha256": "80673c0382dfd5af173efb9d86915230a6a4a9365a6a0d63c5cb4097daa5d023",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1784937600&to=1785023999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1784937600_1785024000.json.gz",
+      "from": "2026-07-25T00:00:00+00:00",
+      "to_exclusive": "2026-07-26T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.50820018723607,
+      "captured_at_utc": "2026-10-06T02:16:49.133099+00:00",
+      "response_sha256": "960aa129c867e6ec7404906dae5309cdcb47ff5de5b27fe3d9101c8223d42c39",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1785024000&to=1785110399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1785024000_1785110400.json.gz",
+      "from": "2026-07-26T00:00:00+00:00",
+      "to_exclusive": "2026-07-27T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.75469989515841,
+      "captured_at_utc": "2026-10-06T02:16:49.529693+00:00",
+      "response_sha256": "4a84dc3b8efec84793c0a17c3c9e55ca0678dc68390174fe27d7464ff758c8cc",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1785110400&to=1785196799",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1785110400_1785196800.json.gz",
+      "from": "2026-07-27T00:00:00+00:00",
+      "to_exclusive": "2026-07-28T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 113.22350008413196,
+      "captured_at_utc": "2026-10-06T02:16:49.926495+00:00",
+      "response_sha256": "69d4978bd59f1ada2ae967b2c5bdf39ce3096f7c5b514dd4b9987bd43d086c92",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1785196800&to=1785283199",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1785196800_1785283200.json.gz",
+      "from": "2026-07-28T00:00:00+00:00",
+      "to_exclusive": "2026-07-29T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 110.52259989082813,
+      "captured_at_utc": "2026-10-06T02:16:50.324085+00:00",
+      "response_sha256": "98d5b6bbc97baf95868d455c6c1fa94c78b105d991ddab1fc9df8424164e2a7f",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1785283200&to=1785369599",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1785283200_1785369600.json.gz",
+      "from": "2026-07-29T00:00:00+00:00",
+      "to_exclusive": "2026-07-30T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 113.75480005517602,
+      "captured_at_utc": "2026-10-06T02:16:50.728617+00:00",
+      "response_sha256": "4add2a2eb2c3998b4afc3ecc5acb1d963e9212a56b9742c9062ec11c01d02613",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1785369600&to=1785455999",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1785369600_1785456000.json.gz",
+      "from": "2026-07-30T00:00:00+00:00",
+      "to_exclusive": "2026-07-31T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.49179994128644,
+      "captured_at_utc": "2026-10-06T02:16:51.132569+00:00",
+      "response_sha256": "413561127dfb8f03c58dad7cf04f8b129cad26fadb721c74a5d805165235bb94",
+      "source": "https://futures.kraken.com/api/charts/v1/trade/PF_ETHUSD/1m?from=1785456000&to=1785542399",
+      "raw_file": "raw\\PF_ETHUSD\\trade\\1785456000_1785542400.json.gz",
+      "from": "2026-07-31T00:00:00+00:00",
+      "to_exclusive": "2026-08-01T00:00:00+00:00"
+    }
+  ]
+}

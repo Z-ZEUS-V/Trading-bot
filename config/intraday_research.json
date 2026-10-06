@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "registered_on": "2026-10-06",
+  "purpose": "intraday_research_only_no_orders_or_llm",
+  "base_config": "config/local_strategy_research.json",
+  "catalog": "data/market_data/instruments/20261006T015156Z/response.json",
+  "data_from": "2026-03-31T00:00:00+00:00",
+  "data_to_exclusive": "2026-08-01T00:00:00+00:00",
+  "windows": [
+    {"id": "development", "from": "2026-04-01T00:00:00+00:00", "to_exclusive": "2026-06-01T00:00:00+00:00"},
+    {"id": "chronological_check", "from": "2026-06-01T00:00:00+00:00", "to_exclusive": "2026-08-01T00:00:00+00:00"}
+  ],
+  "primary_case": "confirmed_breakout_5m",
+  "cases": [
+    {"id": "confirmed_breakout_5m", "kind": "confirmed_breakout", "bar_seconds": 300, "lookback": 20, "atr_period": 14, "stop_atr": 1.5, "max_hold_bars": 12},
+    {"id": "confirmed_breakout_1m", "kind": "confirmed_breakout", "bar_seconds": 60, "lookback": 20, "atr_period": 14, "stop_atr": 1.5, "max_hold_bars": 12},
+    {"id": "reversion_5m", "kind": "band_reentry", "bar_seconds": 300, "lookback": 20, "atr_period": 14, "band_standard_deviations": 2.0, "stop_atr": 1.0, "max_hold_bars": 12},
+    {"id": "reversion_1m", "kind": "band_reentry", "bar_seconds": 60, "lookback": 20, "atr_period": 14, "band_standard_deviations": 2.0, "stop_atr": 1.0, "max_hold_bars": 12}
+  ],
+  "risk_fraction": 0.0025,
+  "target_fraction": 0.005,
+  "minimum_net_target_to_budgeted_loss": 2.0,
+  "maximum_nominal_per_allocated_margin": 25.0,
+  "maximum_allocated_margin_fraction": 0.40,
+  "minimum_free_equity_fraction": 0.60,
+  "max_exposure_over_equity": 10.0,
+  "bar_step_seconds": 60,
+  "signal_to_entry_delay_seconds": 60,
+  "spread_bucket_seconds": 300,
+  "max_spread_age_seconds": 600,
+  "cost_scenarios": [
+    {"name": "observed_spread_plus_1bp", "additional_adverse_fraction": 0.0001},
+    {"name": "observed_spread_plus_5bp", "additional_adverse_fraction": 0.0005}
+  ],
+  "cost_model": "half of lagged historical quoted spread, plus current-book measured p95 walk beyond best for 200 USD, plus stated adverse-execution allowance; adverse tick rounding and taker fees separately",
+  "book_measurement": {"samples_per_symbol": 30, "seconds_between_rounds": 2, "notionals_usd": [25, 50, 100, 200, 500]},
+  "bootstrap": {"method": "circular_moving_blocks_of_calendar_daily_mark_returns", "block_days": 7, "resamples": 2000, "seed": 610061},
+  "screening": {"minimum_trades_each_window_cost": 100, "minimum_profit_factor": 1.1, "maximum_mark_drawdown": 0.1, "positive_net_each_window_cost": true, "positive_bootstrap_lower_bound": true},
+  "definitions": [
+    "Confirmed breakout: previous closed bar closes beyond the high/low of the preceding 20 complete bars; the current closed bar remains beyond that fixed boundary and closes at least as far in the breakout direction.",
+    "Band reentry: mean and population standard deviation use 20 closes before the excursion bar; excursion closes outside 2 standard deviations, next closed bar reenters that fixed band and remains on its original side of the mean. Direction is toward the mean.",
+    "Stops are fixed from the signal close using the registered ATR multiple. Entry one full minute after signal availability; an entry already beyond the stop is rejected.",
+    "Reversion entries require estimated net profit at the fixed mean, after entry/exit costs and funding reserve, to cover the account target. No assumed fill or profit is credited for rejected entries.",
+    "A maximum of one position in the whole account, BTC priority. No daily trade quota. Risk sizing includes round-trip costs and a 10% reserve of risk for funding.",
+    "No tuning after PnL. Secondary cases cannot replace the primary using the chronological check. These months were already observed in coarse strategies; this is not a pristine study-wide holdout. August-September remains reserved.",
+    "Historical analytics buckets are spread proxies, not archived executable books. Only completed lagged buckets may influence decisions; no missing-spread zero fill.",
+    "Current public book measurements are a short sample, not historical fills or latency calibration. Their use in replay is a present-day feasibility assumption.",
+    "Funding accrues by minute from the reconciled hourly rate; unknown intraminute exit accrual uses full-minute debit or zero credit, with uncertainty logged. Double-touch minute uses stop first."
+  ]
+}

@@ -1,0 +1,1247 @@
+{
+  "symbol": "PF_XBTUSD",
+  "kind": "mark",
+  "step_seconds": 60,
+  "points": 177120,
+  "expected_points": 177120,
+  "missing_count": 0,
+  "missing_timestamps": [],
+  "invalid_count": 0,
+  "invalid_timestamps": [],
+  "duplicates": 0,
+  "zero_volume_bars": 177120,
+  "file": "PF_XBTUSD_mark.csv.gz",
+  "sha256": "578f7ac9ed2d61d2d01c12d87765a7e7b70b542a2fe40bbd6562c7c3f749ddf0",
+  "requests": [
+    {
+      "http_status": 200,
+      "round_trip_ms": 168.23399998247623,
+      "captured_at_utc": "2026-10-06T02:15:10.699623+00:00",
+      "response_sha256": "dae5cf46643e27d76bc7503a90b563225a8ad1a4732e0ea0a701fea7933e24c1",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1774915200&to=1775001599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1774915200_1775001600.json.gz",
+      "from": "2026-03-31T00:00:00+00:00",
+      "to_exclusive": "2026-04-01T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 133.29640007577837,
+      "captured_at_utc": "2026-10-06T02:15:11.067191+00:00",
+      "response_sha256": "67854372fb45bff021218a534a500a553cc48dcc595be382809edf084ca9b394",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775001600&to=1775087999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775001600_1775088000.json.gz",
+      "from": "2026-04-01T00:00:00+00:00",
+      "to_exclusive": "2026-04-02T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 126.88850006088614,
+      "captured_at_utc": "2026-10-06T02:15:11.461745+00:00",
+      "response_sha256": "873e1bebcac9d9404f1e715122944aad1dacf84a8ca76bb92cfff458509202fa",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775088000&to=1775174399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775088000_1775174400.json.gz",
+      "from": "2026-04-02T00:00:00+00:00",
+      "to_exclusive": "2026-04-03T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.7074998896569,
+      "captured_at_utc": "2026-10-06T02:15:11.857355+00:00",
+      "response_sha256": "b370357312ea8d03d00a6747f29795342345f278ec5751b2fba51e13773a310c",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775174400&to=1775260799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775174400_1775260800.json.gz",
+      "from": "2026-04-03T00:00:00+00:00",
+      "to_exclusive": "2026-04-04T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 134.09710000269115,
+      "captured_at_utc": "2026-10-06T02:15:12.270306+00:00",
+      "response_sha256": "c915564e4fa6a8f58df149bdf716f46da00f2acdbfb6a4cf27bef71811f71c6a",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775260800&to=1775347199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775260800_1775347200.json.gz",
+      "from": "2026-04-04T00:00:00+00:00",
+      "to_exclusive": "2026-04-05T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 125.86729996837676,
+      "captured_at_utc": "2026-10-06T02:15:12.663700+00:00",
+      "response_sha256": "b8cfead1c6f7a42d5742cbfe7f3accf2eb79e2cfbaa900544764343d3c1ee339",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775347200&to=1775433599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775347200_1775433600.json.gz",
+      "from": "2026-04-05T00:00:00+00:00",
+      "to_exclusive": "2026-04-06T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 140.55599994026124,
+      "captured_at_utc": "2026-10-06T02:15:13.079143+00:00",
+      "response_sha256": "920a50fdd6c73bb97cb3decad5d73cf8822a69345fa8d182036adc2add9c92fb",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775433600&to=1775519999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775433600_1775520000.json.gz",
+      "from": "2026-04-06T00:00:00+00:00",
+      "to_exclusive": "2026-04-07T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 130.71130006574094,
+      "captured_at_utc": "2026-10-06T02:15:13.470295+00:00",
+      "response_sha256": "1435d916aa13948b25477c32d43c589e387c086eec1403928817e60e525385fc",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775520000&to=1775606399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775520000_1775606400.json.gz",
+      "from": "2026-04-07T00:00:00+00:00",
+      "to_exclusive": "2026-04-08T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 143.60939990729094,
+      "captured_at_utc": "2026-10-06T02:15:13.884130+00:00",
+      "response_sha256": "5fdb13180690b1770315df1c39ca0feadec6b60c09b4c3252e8fa13d2d7f1337",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775606400&to=1775692799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775606400_1775692800.json.gz",
+      "from": "2026-04-08T00:00:00+00:00",
+      "to_exclusive": "2026-04-09T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 132.6858999673277,
+      "captured_at_utc": "2026-10-06T02:15:14.274399+00:00",
+      "response_sha256": "dd3060de115f2694cc7bac3c88767ac3d47e9df40f4bf105e7bf542ba87fe0e4",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775692800&to=1775779199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775692800_1775779200.json.gz",
+      "from": "2026-04-09T00:00:00+00:00",
+      "to_exclusive": "2026-04-10T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.33919999562204,
+      "captured_at_utc": "2026-10-06T02:15:14.665004+00:00",
+      "response_sha256": "78d704a5a698198ec351387b95473d0beaa0313ffdfefd3abe6a0e6a339b49a7",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775779200&to=1775865599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775779200_1775865600.json.gz",
+      "from": "2026-04-10T00:00:00+00:00",
+      "to_exclusive": "2026-04-11T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 113.01949992775917,
+      "captured_at_utc": "2026-10-06T02:15:15.056604+00:00",
+      "response_sha256": "da7206b75996ed69048dc8514723ed8d161a95156110f0f7a4940bf10019d323",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775865600&to=1775951999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775865600_1775952000.json.gz",
+      "from": "2026-04-11T00:00:00+00:00",
+      "to_exclusive": "2026-04-12T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 134.98910004273057,
+      "captured_at_utc": "2026-10-06T02:15:15.479266+00:00",
+      "response_sha256": "e3c7bfda9d72738145bcf2126af4c0e2530c2b5acade26030e6c1ae06ce2a71f",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1775952000&to=1776038399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1775952000_1776038400.json.gz",
+      "from": "2026-04-12T00:00:00+00:00",
+      "to_exclusive": "2026-04-13T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 138.61360005103052,
+      "captured_at_utc": "2026-10-06T02:15:15.884688+00:00",
+      "response_sha256": "cb4fc204e3e12e7ecc01891cc82b1d27e1b979aa363f8d3a68d90c114a1e9b9c",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776038400&to=1776124799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776038400_1776124800.json.gz",
+      "from": "2026-04-13T00:00:00+00:00",
+      "to_exclusive": "2026-04-14T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 138.8351998757571,
+      "captured_at_utc": "2026-10-06T02:15:16.285623+00:00",
+      "response_sha256": "e0264918bbfc36f6ceded96400bf89593f9453efa843deeddb6260df0bb2feaa",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776124800&to=1776211199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776124800_1776211200.json.gz",
+      "from": "2026-04-14T00:00:00+00:00",
+      "to_exclusive": "2026-04-15T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.41690007410944,
+      "captured_at_utc": "2026-10-06T02:15:16.669143+00:00",
+      "response_sha256": "a5be72cb1125427beceadfe42e1427428e5d91d7ffc5a12b17dc15c2e212352c",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776211200&to=1776297599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776211200_1776297600.json.gz",
+      "from": "2026-04-15T00:00:00+00:00",
+      "to_exclusive": "2026-04-16T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 136.84719987213612,
+      "captured_at_utc": "2026-10-06T02:15:17.085209+00:00",
+      "response_sha256": "bb3ca9f5a9a953c3fa6202d3553abffe4a3af2791cd2185ee8b8cfb537f40d9b",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776297600&to=1776383999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776297600_1776384000.json.gz",
+      "from": "2026-04-16T00:00:00+00:00",
+      "to_exclusive": "2026-04-17T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.01340004988015,
+      "captured_at_utc": "2026-10-06T02:15:17.468573+00:00",
+      "response_sha256": "146f444e7678d4f7d9a5f26e721954adfce9717118e0c5a55852fce3b34ae781",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776384000&to=1776470399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776384000_1776470400.json.gz",
+      "from": "2026-04-17T00:00:00+00:00",
+      "to_exclusive": "2026-04-18T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 131.23279996216297,
+      "captured_at_utc": "2026-10-06T02:15:17.882354+00:00",
+      "response_sha256": "decce95075338a62eed36a60bd53c6a1df6e3afcd74b86d40ad9efb20f6354e1",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776470400&to=1776556799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776470400_1776556800.json.gz",
+      "from": "2026-04-18T00:00:00+00:00",
+      "to_exclusive": "2026-04-19T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.159300070256,
+      "captured_at_utc": "2026-10-06T02:15:18.275462+00:00",
+      "response_sha256": "dacc8f952bf246f1db726d12f702487aaa0f2442935d8b600fcc92bb738b1c77",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776556800&to=1776643199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776556800_1776643200.json.gz",
+      "from": "2026-04-19T00:00:00+00:00",
+      "to_exclusive": "2026-04-20T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 140.66040003672242,
+      "captured_at_utc": "2026-10-06T02:15:18.693340+00:00",
+      "response_sha256": "837f893f762d64d3d5b2c06a8358ebdbee11e49a9a62a78be2457c89f88242b3",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776643200&to=1776729599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776643200_1776729600.json.gz",
+      "from": "2026-04-20T00:00:00+00:00",
+      "to_exclusive": "2026-04-21T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 131.1850999481976,
+      "captured_at_utc": "2026-10-06T02:15:19.084238+00:00",
+      "response_sha256": "de47bf83dbee235415cf523e3587a9e33a3df2afa6227082dff308c1dfc50f49",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776729600&to=1776815999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776729600_1776816000.json.gz",
+      "from": "2026-04-21T00:00:00+00:00",
+      "to_exclusive": "2026-04-22T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.25169998034835,
+      "captured_at_utc": "2026-10-06T02:15:19.474801+00:00",
+      "response_sha256": "c285ca4b7df93b3354d4ba920a698b7032ba3d70016bcdbac368698a1bf9a09d",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776816000&to=1776902399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776816000_1776902400.json.gz",
+      "from": "2026-04-22T00:00:00+00:00",
+      "to_exclusive": "2026-04-23T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 135.32270002178848,
+      "captured_at_utc": "2026-10-06T02:15:19.890671+00:00",
+      "response_sha256": "c5cedf461946560717e668a91a237ca0bf9666f773bb80ff39d8bf2f3958abf5",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776902400&to=1776988799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776902400_1776988800.json.gz",
+      "from": "2026-04-23T00:00:00+00:00",
+      "to_exclusive": "2026-04-24T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 134.0403000358492,
+      "captured_at_utc": "2026-10-06T02:15:20.291075+00:00",
+      "response_sha256": "91ffaea92b5bf9b66d0e02363c159e11cafe5e08d93b3caf2963af8875f3a883",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1776988800&to=1777075199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1776988800_1777075200.json.gz",
+      "from": "2026-04-24T00:00:00+00:00",
+      "to_exclusive": "2026-04-25T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 125.19100005738437,
+      "captured_at_utc": "2026-10-06T02:15:20.683530+00:00",
+      "response_sha256": "0e23e150bab84d1e7254c56ec0ce1f52c69d49982edd13d7d2ed4a4624db99fe",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1777075200&to=1777161599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1777075200_1777161600.json.gz",
+      "from": "2026-04-25T00:00:00+00:00",
+      "to_exclusive": "2026-04-26T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.36599996685982,
+      "captured_at_utc": "2026-10-06T02:15:21.082137+00:00",
+      "response_sha256": "35db9aead5bfb84640c0af159516fb16df341cc9a2154a22e745eb9278ae67d0",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1777161600&to=1777247999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1777161600_1777248000.json.gz",
+      "from": "2026-04-26T00:00:00+00:00",
+      "to_exclusive": "2026-04-27T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 130.98130002617836,
+      "captured_at_utc": "2026-10-06T02:15:21.491709+00:00",
+      "response_sha256": "782160091a5230d231933935004690fc1e460cc39fc9b5331b760d2836c6120a",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1777248000&to=1777334399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1777248000_1777334400.json.gz",
+      "from": "2026-04-27T00:00:00+00:00",
+      "to_exclusive": "2026-04-28T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 124.31670003570616,
+      "captured_at_utc": "2026-10-06T02:15:21.884924+00:00",
+      "response_sha256": "656b92661d0ab888df71f005631fa082e659d8b81d8326fa2c818fbfca7ec4b5",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1777334400&to=1777420799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1777334400_1777420800.json.gz",
+      "from": "2026-04-28T00:00:00+00:00",
+      "to_exclusive": "2026-04-29T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 125.78870006836951,
+      "captured_at_utc": "2026-10-06T02:15:22.286408+00:00",
+      "response_sha256": "4b838cd2dd711c1508b0607c226b887dcb14494dd9875ff72820508ac84b6f09",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1777420800&to=1777507199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1777420800_1777507200.json.gz",
+      "from": "2026-04-29T00:00:00+00:00",
+      "to_exclusive": "2026-04-30T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.59870013035834,
+      "captured_at_utc": "2026-10-06T02:15:22.682250+00:00",
+      "response_sha256": "83bb494e1358fcc1867e38e55ecc7a810fe55d60679ac1fe5fc4f239487eb306",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1777507200&to=1777593599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1777507200_1777593600.json.gz",
+      "from": "2026-04-30T00:00:00+00:00",
+      "to_exclusive": "2026-05-01T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 124.85929997637868,
+      "captured_at_utc": "2026-10-06T02:15:23.087178+00:00",
+      "response_sha256": "c4f527291b4076b78f672bf322be6f064146bf10c9fdab166166429512d05973",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1777593600&to=1777679999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1777593600_1777680000.json.gz",
+      "from": "2026-05-01T00:00:00+00:00",
+      "to_exclusive": "2026-05-02T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.55059990659356,
+      "captured_at_utc": "2026-10-06T02:15:23.486965+00:00",
+      "response_sha256": "f414797165128e16adcc7ddb19189f3af40f89b18e68cb97088d46362358b1a2",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1777680000&to=1777766399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1777680000_1777766400.json.gz",
+      "from": "2026-05-02T00:00:00+00:00",
+      "to_exclusive": "2026-05-03T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.69749992527068,
+      "captured_at_utc": "2026-10-06T02:15:23.881396+00:00",
+      "response_sha256": "ec365ff307c5674c9fcd20c1a007a26353098e0ee3c5ca4f1f9bbda8fe08f800",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1777766400&to=1777852799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1777766400_1777852800.json.gz",
+      "from": "2026-05-03T00:00:00+00:00",
+      "to_exclusive": "2026-05-04T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 134.86470002681017,
+      "captured_at_utc": "2026-10-06T02:15:24.298250+00:00",
+      "response_sha256": "3f1cc442e10f36b44fd030226bb680bb471d023b0cb5e304c6d85dab79549665",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1777852800&to=1777939199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1777852800_1777939200.json.gz",
+      "from": "2026-05-04T00:00:00+00:00",
+      "to_exclusive": "2026-05-05T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 133.50800005719066,
+      "captured_at_utc": "2026-10-06T02:15:24.697132+00:00",
+      "response_sha256": "13afba45dd3518d57dd54f19b2092ea8cade328c9798d216b1112d8ca364b18f",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1777939200&to=1778025599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1777939200_1778025600.json.gz",
+      "from": "2026-05-05T00:00:00+00:00",
+      "to_exclusive": "2026-05-06T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 126.0675999801606,
+      "captured_at_utc": "2026-10-06T02:15:25.090655+00:00",
+      "response_sha256": "19f36fb2b164e037ff51384855fb90a1da49116f21b6a364ebab1a94fc34fab2",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778025600&to=1778111999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778025600_1778112000.json.gz",
+      "from": "2026-05-06T00:00:00+00:00",
+      "to_exclusive": "2026-05-07T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.30940007045865,
+      "captured_at_utc": "2026-10-06T02:15:25.487557+00:00",
+      "response_sha256": "6cf84fdd4dbac4326ce851500e6187fac4431af0efb075da5b4fd548e5fb7d46",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778112000&to=1778198399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778112000_1778198400.json.gz",
+      "from": "2026-05-07T00:00:00+00:00",
+      "to_exclusive": "2026-05-08T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 118.60730010084808,
+      "captured_at_utc": "2026-10-06T02:15:25.886131+00:00",
+      "response_sha256": "fea07fd081dd389e381e3d59a05afd0f9767404c63e603a77727a30c4c69820b",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778198400&to=1778284799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778198400_1778284800.json.gz",
+      "from": "2026-05-08T00:00:00+00:00",
+      "to_exclusive": "2026-05-09T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 214.0679000876844,
+      "captured_at_utc": "2026-10-06T02:15:26.381965+00:00",
+      "response_sha256": "f0b950be096ed7f3512d8bfd09cc684ca673f98bc5b6db612c56ccbbdc03b584",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778284800&to=1778371199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778284800_1778371200.json.gz",
+      "from": "2026-05-09T00:00:00+00:00",
+      "to_exclusive": "2026-05-10T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 133.20800010114908,
+      "captured_at_utc": "2026-10-06T02:15:26.707367+00:00",
+      "response_sha256": "bae2fbf068c43a3d7ddb8619d7f70a1ae0754edc91d3b782729c98a265f01b46",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778371200&to=1778457599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778371200_1778457600.json.gz",
+      "from": "2026-05-10T00:00:00+00:00",
+      "to_exclusive": "2026-05-11T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 127.45899986475706,
+      "captured_at_utc": "2026-10-06T02:15:27.103920+00:00",
+      "response_sha256": "cff0ed496acb898f2c8968ae4431aa65a9eb7691980322517f6f3cf76f1c6d69",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778457600&to=1778543999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778457600_1778544000.json.gz",
+      "from": "2026-05-11T00:00:00+00:00",
+      "to_exclusive": "2026-05-12T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 132.95960007235408,
+      "captured_at_utc": "2026-10-06T02:15:27.510519+00:00",
+      "response_sha256": "c1acc0a838605031a1096de5f61cbf570652d893f099fe8b2056686d29ed0ccc",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778544000&to=1778630399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778544000_1778630400.json.gz",
+      "from": "2026-05-12T00:00:00+00:00",
+      "to_exclusive": "2026-05-13T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.26899999566376,
+      "captured_at_utc": "2026-10-06T02:15:27.900292+00:00",
+      "response_sha256": "50689c87b357b3fbb4d56d0b5f4e1e4be722a5c5c8268b79c2b0b7bd3cdbca2f",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778630400&to=1778716799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778630400_1778716800.json.gz",
+      "from": "2026-05-13T00:00:00+00:00",
+      "to_exclusive": "2026-05-14T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.13909991644323,
+      "captured_at_utc": "2026-10-06T02:15:28.303595+00:00",
+      "response_sha256": "e3444fb80faf8fb0babc819e0e0b47ed9bd19754ce12215c093ff7b0f640c824",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778716800&to=1778803199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778716800_1778803200.json.gz",
+      "from": "2026-05-14T00:00:00+00:00",
+      "to_exclusive": "2026-05-15T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 125.5652999971062,
+      "captured_at_utc": "2026-10-06T02:15:28.707253+00:00",
+      "response_sha256": "aa8a210b9f4df41c5e60cb95ac38e42e7da31dfc440944a9aed7610f08aa8dcb",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778803200&to=1778889599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778803200_1778889600.json.gz",
+      "from": "2026-05-15T00:00:00+00:00",
+      "to_exclusive": "2026-05-16T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.17660008557141,
+      "captured_at_utc": "2026-10-06T02:15:29.106124+00:00",
+      "response_sha256": "d155738d789e7aad749dab613b24868231bd27036dd117dd51750fa5a2b1ea33",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778889600&to=1778975999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778889600_1778976000.json.gz",
+      "from": "2026-05-16T00:00:00+00:00",
+      "to_exclusive": "2026-05-17T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.44090006686747,
+      "captured_at_utc": "2026-10-06T02:15:29.501375+00:00",
+      "response_sha256": "bc0c066142e039f8e7931d95f60b453a4b22b2ffca6fbee94727a40f881069e7",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1778976000&to=1779062399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1778976000_1779062400.json.gz",
+      "from": "2026-05-17T00:00:00+00:00",
+      "to_exclusive": "2026-05-18T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 137.95970007777214,
+      "captured_at_utc": "2026-10-06T02:15:29.922178+00:00",
+      "response_sha256": "3e8526a32ab0c1201d0fc016eb43e21bc311d9e50dc7c336e00a29492108fd08",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1779062400&to=1779148799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1779062400_1779148800.json.gz",
+      "from": "2026-05-18T00:00:00+00:00",
+      "to_exclusive": "2026-05-19T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.62940010987222,
+      "captured_at_utc": "2026-10-06T02:15:30.307648+00:00",
+      "response_sha256": "69e344da07877722db7d59ea7c0297488a8b07dc0e11e584457e8b804dd2cabb",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1779148800&to=1779235199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1779148800_1779235200.json.gz",
+      "from": "2026-05-19T00:00:00+00:00",
+      "to_exclusive": "2026-05-20T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 125.6273000035435,
+      "captured_at_utc": "2026-10-06T02:15:30.711279+00:00",
+      "response_sha256": "4e040f6939da66dc5861ebd1f43f69b5420c66ce06dc4a361dd4678ccacb950c",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1779235200&to=1779321599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1779235200_1779321600.json.gz",
+      "from": "2026-05-20T00:00:00+00:00",
+      "to_exclusive": "2026-05-21T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 143.24959996156394,
+      "captured_at_utc": "2026-10-06T02:15:31.130485+00:00",
+      "response_sha256": "fbef481ef930c4826d2729a8228ed32df4cca5de8906bf440d7dafffe948e679",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1779321600&to=1779407999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1779321600_1779408000.json.gz",
+      "from": "2026-05-21T00:00:00+00:00",
+      "to_exclusive": "2026-05-22T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 127.29999981820583,
+      "captured_at_utc": "2026-10-06T02:15:31.514841+00:00",
+      "response_sha256": "1e1f874dd6a3c35bfe7fbed89413903385a694389c9e4c21f18f028a1d244bff",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1779408000&to=1779494399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1779408000_1779494400.json.gz",
+      "from": "2026-05-22T00:00:00+00:00",
+      "to_exclusive": "2026-05-23T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 132.91549985297024,
+      "captured_at_utc": "2026-10-06T02:15:31.921193+00:00",
+      "response_sha256": "a87f1ba43814a9838c2e8d7fe98f0f8f05edebcd737b05e1ca32b181bc14a37b",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1779494400&to=1779580799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1779494400_1779580800.json.gz",
+      "from": "2026-05-23T00:00:00+00:00",
+      "to_exclusive": "2026-05-24T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.8772001080215,
+      "captured_at_utc": "2026-10-06T02:15:32.308377+00:00",
+      "response_sha256": "4d03f79dc75aef18dfe5bb6610ab7429287f3d0a49f9f3b306ea29fb5dc543b2",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1779580800&to=1779667199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1779580800_1779667200.json.gz",
+      "from": "2026-05-24T00:00:00+00:00",
+      "to_exclusive": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 133.9042999316007,
+      "captured_at_utc": "2026-10-06T02:15:32.723469+00:00",
+      "response_sha256": "c39145c8e3b2ea74a039bbd17e76079ac349480024c6e6b1332fa08b1bc068e7",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1779667200&to=1779753599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1779667200_1779753600.json.gz",
+      "from": "2026-05-25T00:00:00+00:00",
+      "to_exclusive": "2026-05-26T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.95549984648824,
+      "captured_at_utc": "2026-10-06T02:15:33.114057+00:00",
+      "response_sha256": "67da4317f36de7fe4c8eb028172a5060bbc3c9aec2ecf39a84c21dd4bbd30944",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1779753600&to=1779839999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1779753600_1779840000.json.gz",
+      "from": "2026-05-26T00:00:00+00:00",
+      "to_exclusive": "2026-05-27T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.64740017801523,
+      "captured_at_utc": "2026-10-06T02:15:33.514079+00:00",
+      "response_sha256": "ec1064b9f2d140a174e61c523ace1aeabd77296318e853c2e63ab3e03a69d32a",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1779840000&to=1779926399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1779840000_1779926400.json.gz",
+      "from": "2026-05-27T00:00:00+00:00",
+      "to_exclusive": "2026-05-28T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 118.20379993878305,
+      "captured_at_utc": "2026-10-06T02:15:33.909898+00:00",
+      "response_sha256": "3b7dcf9492810f9a083db98ae9494b0609e6d734e62af829fe04ec724f3db02c",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1779926400&to=1780012799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1779926400_1780012800.json.gz",
+      "from": "2026-05-28T00:00:00+00:00",
+      "to_exclusive": "2026-05-29T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 140.9984000492841,
+      "captured_at_utc": "2026-10-06T02:15:34.333861+00:00",
+      "response_sha256": "a18dc11df6dba43720936619b0dc6ffc604d8f6ed6fbf5224bae2296cbf4e77a",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780012800&to=1780099199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780012800_1780099200.json.gz",
+      "from": "2026-05-29T00:00:00+00:00",
+      "to_exclusive": "2026-05-30T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.39509977027774,
+      "captured_at_utc": "2026-10-06T02:15:34.717471+00:00",
+      "response_sha256": "7cd67cfd1361a2093c5c88321074e697b2bd2add3c803e85a3c7de3bc87e4b20",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780099200&to=1780185599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780099200_1780185600.json.gz",
+      "from": "2026-05-30T00:00:00+00:00",
+      "to_exclusive": "2026-05-31T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 147.2706999629736,
+      "captured_at_utc": "2026-10-06T02:15:35.141504+00:00",
+      "response_sha256": "3a5f7b1c1df12ca18c753fb5e7ee73047e0feeb5961723debc7406cba71316b2",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780185600&to=1780271999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780185600_1780272000.json.gz",
+      "from": "2026-05-31T00:00:00+00:00",
+      "to_exclusive": "2026-06-01T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 127.3831999860704,
+      "captured_at_utc": "2026-10-06T02:15:35.523050+00:00",
+      "response_sha256": "de5bd83d0b266af6fc8668df40b22ae8ba8ea9e3a844735cb92a21366d2abccf",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780272000&to=1780358399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780272000_1780358400.json.gz",
+      "from": "2026-06-01T00:00:00+00:00",
+      "to_exclusive": "2026-06-02T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 127.81279999762774,
+      "captured_at_utc": "2026-10-06T02:15:35.924512+00:00",
+      "response_sha256": "5933a7123f8ffba569a7526e0f7417ad4d95cbe7c4652e957cda5c4ad6dd3adf",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780358400&to=1780444799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780358400_1780444800.json.gz",
+      "from": "2026-06-02T00:00:00+00:00",
+      "to_exclusive": "2026-06-03T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 125.51130005158484,
+      "captured_at_utc": "2026-10-06T02:15:36.321873+00:00",
+      "response_sha256": "087cc8d26cd7c166b624b5b6de5e57c5635cdefb6358748bf674fd8b0233022f",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780444800&to=1780531199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780444800_1780531200.json.gz",
+      "from": "2026-06-03T00:00:00+00:00",
+      "to_exclusive": "2026-06-04T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 132.21749989315867,
+      "captured_at_utc": "2026-10-06T02:15:36.730592+00:00",
+      "response_sha256": "66563a0796d6482c2ef7dafe1e3e23420b6341b893b4b19ec6bc60d3d423dadf",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780531200&to=1780617599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780531200_1780617600.json.gz",
+      "from": "2026-06-04T00:00:00+00:00",
+      "to_exclusive": "2026-06-05T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.20719999074936,
+      "captured_at_utc": "2026-10-06T02:15:37.119584+00:00",
+      "response_sha256": "eeab9fc116a157a53496bfb0fd5f212d0be60b6568ea3d0eed9b209a62255817",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780617600&to=1780703999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780617600_1780704000.json.gz",
+      "from": "2026-06-05T00:00:00+00:00",
+      "to_exclusive": "2026-06-06T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 133.69600009173155,
+      "captured_at_utc": "2026-10-06T02:15:37.533079+00:00",
+      "response_sha256": "2b3a65279e814848ab14b7bd76b44af6faddee763abb985c25105deb68668fbe",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780704000&to=1780790399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780704000_1780790400.json.gz",
+      "from": "2026-06-06T00:00:00+00:00",
+      "to_exclusive": "2026-06-07T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 125.73729990981519,
+      "captured_at_utc": "2026-10-06T02:15:37.926315+00:00",
+      "response_sha256": "8a7773f67e2dfb618f930ffba617c4697d37b61f97ce2692a901b4d6f82041ad",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780790400&to=1780876799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780790400_1780876800.json.gz",
+      "from": "2026-06-07T00:00:00+00:00",
+      "to_exclusive": "2026-06-08T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 148.18870020098984,
+      "captured_at_utc": "2026-10-06T02:15:38.349355+00:00",
+      "response_sha256": "7c3c1187bc5e9653225aa6734c33b928e29e1638a13cc675b31a270040ef07bc",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780876800&to=1780963199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780876800_1780963200.json.gz",
+      "from": "2026-06-08T00:00:00+00:00",
+      "to_exclusive": "2026-06-09T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 130.46599994413555,
+      "captured_at_utc": "2026-10-06T02:15:38.732780+00:00",
+      "response_sha256": "255cf1a498b2c6541474191ee49ce746db9007fabec53fdd7da4c021831daedf",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1780963200&to=1781049599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1780963200_1781049600.json.gz",
+      "from": "2026-06-09T00:00:00+00:00",
+      "to_exclusive": "2026-06-10T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 124.71580016426742,
+      "captured_at_utc": "2026-10-06T02:15:39.128096+00:00",
+      "response_sha256": "ba1ff253b2adda9445e9461066915ab16af8d7800090cef801293c50594834ed",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1781049600&to=1781135999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1781049600_1781136000.json.gz",
+      "from": "2026-06-10T00:00:00+00:00",
+      "to_exclusive": "2026-06-11T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.4925999995321,
+      "captured_at_utc": "2026-10-06T02:15:39.527310+00:00",
+      "response_sha256": "c61955215bc4a0ea6d34318bc6e76e093b92baef33a0152ebc2320fdbef4ddfc",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1781136000&to=1781222399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1781136000_1781222400.json.gz",
+      "from": "2026-06-11T00:00:00+00:00",
+      "to_exclusive": "2026-06-12T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 127.9314998537302,
+      "captured_at_utc": "2026-10-06T02:15:39.933983+00:00",
+      "response_sha256": "f4fcab0fb9b58f3d372860991641dd5603420a3086bc1b94ff5c834e0d5124f3",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1781222400&to=1781308799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1781222400_1781308800.json.gz",
+      "from": "2026-06-12T00:00:00+00:00",
+      "to_exclusive": "2026-06-13T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 127.42480007000268,
+      "captured_at_utc": "2026-10-06T02:15:40.334499+00:00",
+      "response_sha256": "f4805a63be7c5e89edd6f4a428f232c865e3347000d4bcaff993d1f75e83788a",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1781308800&to=1781395199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1781308800_1781395200.json.gz",
+      "from": "2026-06-13T00:00:00+00:00",
+      "to_exclusive": "2026-06-14T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 124.19620016589761,
+      "captured_at_utc": "2026-10-06T02:15:40.732543+00:00",
+      "response_sha256": "95e0827a17559fce39d6e7126dd32b99a62cc7624dc9cc971eca231f74623f96",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1781395200&to=1781481599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1781395200_1781481600.json.gz",
+      "from": "2026-06-14T00:00:00+00:00",
+      "to_exclusive": "2026-06-15T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 135.70999982766807,
+      "captured_at_utc": "2026-10-06T02:15:41.145155+00:00",
+      "response_sha256": "acf2a0d2fbd7ed117c5efab7b7ae3926fffaa55835dcd44f4ed6e2fdd18a91e5",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1781481600&to=1781567999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1781481600_1781568000.json.gz",
+      "from": "2026-06-15T00:00:00+00:00",
+      "to_exclusive": "2026-06-16T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 128.27550014480948,
+      "captured_at_utc": "2026-10-06T02:15:41.538111+00:00",
+      "response_sha256": "301435d6c4d7a327272c09eed53fd22e113d886a70488e5f2c3a723a92a4d53e",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1781568000&to=1781654399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1781568000_1781654400.json.gz",
+      "from": "2026-06-16T00:00:00+00:00",
+      "to_exclusive": "2026-06-17T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 137.6358000561595,
+      "captured_at_utc": "2026-10-06T02:15:41.949726+00:00",
+      "response_sha256": "687e16d2010e17a8bfd68fcec992a27cb34ec2db33b5707640ecbdc8caee565a",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1781654400&to=1781740799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1781654400_1781740800.json.gz",
+      "from": "2026-06-17T00:00:00+00:00",
+      "to_exclusive": "2026-06-18T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 135.55769994854927,
+      "captured_at_utc": "2026-10-06T02:15:42.348613+00:00",
+      "response_sha256": "07b1f847fe05ab61b8ddbde8606f0cbe087669c9931ca0de47e773e642965bc9",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1781740800&to=1781827199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1781740800_1781827200.json.gz",
+      "from": "2026-06-18T00:00:00+00:00",
+      "to_exclusive": "2026-06-19T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 129.50629997067153,
+      "captured_at_utc": "2026-10-06T02:15:42.742743+00:00",
+      "response_sha256": "5e56bab290f3f0abb4531005da6a55bbc03edae7eddb03a79633d6354e3bca13",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1781827200&to=1781913599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1781827200_1781913600.json.gz",
+      "from": "2026-06-19T00:00:00+00:00",
+      "to_exclusive": "2026-06-20T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 116.52739997953176,
+      "captured_at_utc": "2026-10-06T02:15:43.129576+00:00",
+      "response_sha256": "ce164073bb5839244f4b1b1b7c3956ced256c0b679acc4d13247383057188a8e",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1781913600&to=1781999999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1781913600_1782000000.json.gz",
+      "from": "2026-06-20T00:00:00+00:00",
+      "to_exclusive": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 129.44589997641742,
+      "captured_at_utc": "2026-10-06T02:15:43.543652+00:00",
+      "response_sha256": "f510bb69880c4060de5cc189c2fbe479398b9128f0b93f94e593c24416839fa4",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782000000&to=1782086399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782000000_1782086400.json.gz",
+      "from": "2026-06-21T00:00:00+00:00",
+      "to_exclusive": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 141.46890002302825,
+      "captured_at_utc": "2026-10-06T02:15:43.956105+00:00",
+      "response_sha256": "ac289dd482c19ee3988e1b0eefa29c0ceea0476ffa33c614b4690562feb9eee7",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782086400&to=1782172799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782086400_1782172800.json.gz",
+      "from": "2026-06-22T00:00:00+00:00",
+      "to_exclusive": "2026-06-23T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 125.89480006136,
+      "captured_at_utc": "2026-10-06T02:15:44.341278+00:00",
+      "response_sha256": "4d8fa6f32f14e38718b34c58a24e36e9d75d929c67924c4c670b42d0722b9072",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782172800&to=1782259199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782172800_1782259200.json.gz",
+      "from": "2026-06-23T00:00:00+00:00",
+      "to_exclusive": "2026-06-24T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 124.32190007530153,
+      "captured_at_utc": "2026-10-06T02:15:44.739651+00:00",
+      "response_sha256": "36c6c22c0c013f315e40946d3cedfe776df0b6808374f48a3aa20186a0cfb036",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782259200&to=1782345599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782259200_1782345600.json.gz",
+      "from": "2026-06-24T00:00:00+00:00",
+      "to_exclusive": "2026-06-25T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.81059999763966,
+      "captured_at_utc": "2026-10-06T02:15:45.137688+00:00",
+      "response_sha256": "64ceeb14582d99ca3c07705bb272e2d73e1e69bdd9737d37d48c150000a7761d",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782345600&to=1782431999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782345600_1782432000.json.gz",
+      "from": "2026-06-25T00:00:00+00:00",
+      "to_exclusive": "2026-06-26T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.88290006108582,
+      "captured_at_utc": "2026-10-06T02:15:45.540598+00:00",
+      "response_sha256": "460ce6bfcdf22d72c272a666e40dbcb8262dec7f636d257567d932bb1081d2e9",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782432000&to=1782518399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782432000_1782518400.json.gz",
+      "from": "2026-06-26T00:00:00+00:00",
+      "to_exclusive": "2026-06-27T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 142.8606000263244,
+      "captured_at_utc": "2026-10-06T02:15:45.960858+00:00",
+      "response_sha256": "aeeaea1cbde63c4846e34c51c9678f64f9b1812e6296817def327d9213b1303b",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782518400&to=1782604799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782518400_1782604800.json.gz",
+      "from": "2026-06-27T00:00:00+00:00",
+      "to_exclusive": "2026-06-28T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 117.73370020091534,
+      "captured_at_utc": "2026-10-06T02:15:46.336331+00:00",
+      "response_sha256": "e0ebcb5ddf1689566378404c5dc4e8d5c3cf4c5fc9057c11674b184e98b15a1e",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782604800&to=1782691199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782604800_1782691200.json.gz",
+      "from": "2026-06-28T00:00:00+00:00",
+      "to_exclusive": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 131.70940009877086,
+      "captured_at_utc": "2026-10-06T02:15:46.750613+00:00",
+      "response_sha256": "7617ec7ba3a4d11fe1be2be5a9f022419ca43d461b37911e2869c858bbbf17ad",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782691200&to=1782777599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782691200_1782777600.json.gz",
+      "from": "2026-06-29T00:00:00+00:00",
+      "to_exclusive": "2026-06-30T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 133.34849989041686,
+      "captured_at_utc": "2026-10-06T02:15:47.153822+00:00",
+      "response_sha256": "917984726f133dbf23259241e9870160883a5ca718250a39f1fd33c08d36218a",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782777600&to=1782863999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782777600_1782864000.json.gz",
+      "from": "2026-06-30T00:00:00+00:00",
+      "to_exclusive": "2026-07-01T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 125.74449996463954,
+      "captured_at_utc": "2026-10-06T02:15:47.547530+00:00",
+      "response_sha256": "ba7327c1695a6172bebd539f6cd272d1535028d24ab40cca939870cececcaf5a",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782864000&to=1782950399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782864000_1782950400.json.gz",
+      "from": "2026-07-01T00:00:00+00:00",
+      "to_exclusive": "2026-07-02T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.24619995988905,
+      "captured_at_utc": "2026-10-06T02:15:47.942374+00:00",
+      "response_sha256": "d01aa57fcd87973b8679de62375bed611a4db3f0c285b7ea3b06d835c2a5c353",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1782950400&to=1783036799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1782950400_1783036800.json.gz",
+      "from": "2026-07-02T00:00:00+00:00",
+      "to_exclusive": "2026-07-03T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 130.25679998099804,
+      "captured_at_utc": "2026-10-06T02:15:48.352858+00:00",
+      "response_sha256": "1a19988c05461dfe1023a5d2353fddaa5541da4cc3a6baeebff8611fce80c2e7",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783036800&to=1783123199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783036800_1783123200.json.gz",
+      "from": "2026-07-03T00:00:00+00:00",
+      "to_exclusive": "2026-07-04T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.14009999297559,
+      "captured_at_utc": "2026-10-06T02:15:48.745900+00:00",
+      "response_sha256": "c2ae22215b68b3779625a39f957e5690106d2368d6281cb1a92150ddba715b6d",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783123200&to=1783209599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783123200_1783209600.json.gz",
+      "from": "2026-07-04T00:00:00+00:00",
+      "to_exclusive": "2026-07-05T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 129.3533998541534,
+      "captured_at_utc": "2026-10-06T02:15:49.154519+00:00",
+      "response_sha256": "d79b761a4fa388b66f99532ff80617f47320a49398ac3ef3efd2021850c19dcc",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783209600&to=1783295999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783209600_1783296000.json.gz",
+      "from": "2026-07-05T00:00:00+00:00",
+      "to_exclusive": "2026-07-06T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 134.90619999356568,
+      "captured_at_utc": "2026-10-06T02:15:49.560418+00:00",
+      "response_sha256": "d4c8ba2dd356781e0d152d7057232997e4b8d8bca04207240bc112aae0abefe6",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783296000&to=1783382399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783296000_1783382400.json.gz",
+      "from": "2026-07-06T00:00:00+00:00",
+      "to_exclusive": "2026-07-07T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.5783999543637,
+      "captured_at_utc": "2026-10-06T02:15:49.949211+00:00",
+      "response_sha256": "b28fada30bf9eaf8bc9ee6ffddf8c138135afc552c2bb9c27dd8de2de3d1bd71",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783382400&to=1783468799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783382400_1783468800.json.gz",
+      "from": "2026-07-07T00:00:00+00:00",
+      "to_exclusive": "2026-07-08T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 129.87700011581182,
+      "captured_at_utc": "2026-10-06T02:15:50.357141+00:00",
+      "response_sha256": "bb34074d90c7e06c14a99fc38751a11608d9a6131ae2cb3bb9f49e71406a78c9",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783468800&to=1783555199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783468800_1783555200.json.gz",
+      "from": "2026-07-08T00:00:00+00:00",
+      "to_exclusive": "2026-07-09T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 136.99700008146465,
+      "captured_at_utc": "2026-10-06T02:15:50.765885+00:00",
+      "response_sha256": "4206853a845aed14fe3c4cc02af5cc01f1fdff0966d1c3e4bdebad0ef7b214ae",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783555200&to=1783641599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783555200_1783641600.json.gz",
+      "from": "2026-07-09T00:00:00+00:00",
+      "to_exclusive": "2026-07-10T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 122.8662000503391,
+      "captured_at_utc": "2026-10-06T02:15:51.152998+00:00",
+      "response_sha256": "8ab74e56faebf2733bfe5a352b2dce7e3308ca386ef9291f9191c26b96670348",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783641600&to=1783727999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783641600_1783728000.json.gz",
+      "from": "2026-07-10T00:00:00+00:00",
+      "to_exclusive": "2026-07-11T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 121.90170004032552,
+      "captured_at_utc": "2026-10-06T02:15:51.552770+00:00",
+      "response_sha256": "845378eefe04dc677a3772864f4c82e645435d6d8422baa5b5731e5cbc6c8dc1",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783728000&to=1783814399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783728000_1783814400.json.gz",
+      "from": "2026-07-11T00:00:00+00:00",
+      "to_exclusive": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.78389993682504,
+      "captured_at_utc": "2026-10-06T02:15:51.956461+00:00",
+      "response_sha256": "d66029950224811d616dd28a6a1d32004cfc2421b7388a8c36d2e3c71bb5eaa6",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783814400&to=1783900799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783814400_1783900800.json.gz",
+      "from": "2026-07-12T00:00:00+00:00",
+      "to_exclusive": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 135.63899998553097,
+      "captured_at_utc": "2026-10-06T02:15:52.368776+00:00",
+      "response_sha256": "e3db8fc2dbb2a26be3f1c3938a16c56fc13e8a9a5c51fd65b427fa334a586363",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783900800&to=1783987199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783900800_1783987200.json.gz",
+      "from": "2026-07-13T00:00:00+00:00",
+      "to_exclusive": "2026-07-14T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 129.4078000355512,
+      "captured_at_utc": "2026-10-06T02:15:52.763483+00:00",
+      "response_sha256": "0047bb32b7b08031781ea475c3913d08bfe619b5fc6ade47cf7caaf623b924f0",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1783987200&to=1784073599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1783987200_1784073600.json.gz",
+      "from": "2026-07-14T00:00:00+00:00",
+      "to_exclusive": "2026-07-15T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 129.43070009350777,
+      "captured_at_utc": "2026-10-06T02:15:53.164213+00:00",
+      "response_sha256": "9e7b972638384f3bb3611b558438be0aac9ffea48d0149deb04033531b4c694a",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1784073600&to=1784159999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1784073600_1784160000.json.gz",
+      "from": "2026-07-15T00:00:00+00:00",
+      "to_exclusive": "2026-07-16T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.95049985125661,
+      "captured_at_utc": "2026-10-06T02:15:53.556378+00:00",
+      "response_sha256": "bb589a9806676e8ba544436f0e00b09a098a4d05ee2caa3744b6289fc8472120",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1784160000&to=1784246399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1784160000_1784246400.json.gz",
+      "from": "2026-07-16T00:00:00+00:00",
+      "to_exclusive": "2026-07-17T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 156.13840008154511,
+      "captured_at_utc": "2026-10-06T02:15:53.993449+00:00",
+      "response_sha256": "279c147bc422ee689554bee31eb0f1c59a17775bb85555953f3d700e732330cc",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1784246400&to=1784332799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1784246400_1784332800.json.gz",
+      "from": "2026-07-17T00:00:00+00:00",
+      "to_exclusive": "2026-07-18T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 128.02830012515187,
+      "captured_at_utc": "2026-10-06T02:15:54.366076+00:00",
+      "response_sha256": "51fb889aee0696059ed092739e49cabeb5505dcd62dfeb7cafa72cb24b18e29e",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1784332800&to=1784419199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1784332800_1784419200.json.gz",
+      "from": "2026-07-18T00:00:00+00:00",
+      "to_exclusive": "2026-07-19T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.40079993009567,
+      "captured_at_utc": "2026-10-06T02:15:54.761817+00:00",
+      "response_sha256": "77a20d9cfa84b9f0b1fb1c68caf8a01acc7988780dd9af69104443ba5c40412e",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1784419200&to=1784505599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1784419200_1784505600.json.gz",
+      "from": "2026-07-19T00:00:00+00:00",
+      "to_exclusive": "2026-07-20T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 158.0711998976767,
+      "captured_at_utc": "2026-10-06T02:15:55.197782+00:00",
+      "response_sha256": "be524e8d961305e68c7cb0b66c2a003b9188773f70e95f62f4e93e80185fa60e",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1784505600&to=1784591999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1784505600_1784592000.json.gz",
+      "from": "2026-07-20T00:00:00+00:00",
+      "to_exclusive": "2026-07-21T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.33820019476116,
+      "captured_at_utc": "2026-10-06T02:15:55.558833+00:00",
+      "response_sha256": "24dbe410193ae13ec6a0863aba0187a1396c551979b136e037b0bb3a6dbaa851",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1784592000&to=1784678399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1784592000_1784678400.json.gz",
+      "from": "2026-07-21T00:00:00+00:00",
+      "to_exclusive": "2026-07-22T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 123.93589993007481,
+      "captured_at_utc": "2026-10-06T02:15:55.964525+00:00",
+      "response_sha256": "d0f1e4245202e97feea1bf536218df2b062ff63ef3708307ffa4edb2a3315244",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1784678400&to=1784764799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1784678400_1784764800.json.gz",
+      "from": "2026-07-22T00:00:00+00:00",
+      "to_exclusive": "2026-07-23T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 131.08810014091432,
+      "captured_at_utc": "2026-10-06T02:15:56.373201+00:00",
+      "response_sha256": "3494eda612aa61fb9c61f9e3cc717714afdab54c491e14187a6a3fe4bcab1b63",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1784764800&to=1784851199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1784764800_1784851200.json.gz",
+      "from": "2026-07-23T00:00:00+00:00",
+      "to_exclusive": "2026-07-24T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 128.319300012663,
+      "captured_at_utc": "2026-10-06T02:15:56.771019+00:00",
+      "response_sha256": "ce0f2d94915ab622fa9e5c7816eab3ce029081c5e4eaf5e7241405ce1afc3129",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1784851200&to=1784937599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1784851200_1784937600.json.gz",
+      "from": "2026-07-24T00:00:00+00:00",
+      "to_exclusive": "2026-07-25T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 119.23780012875795,
+      "captured_at_utc": "2026-10-06T02:15:57.162651+00:00",
+      "response_sha256": "f3609207adc7c3bfa4b4a50f16f2c17d25764a066f7a7a64c4b89e28c6b9c569",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1784937600&to=1785023999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1784937600_1785024000.json.gz",
+      "from": "2026-07-25T00:00:00+00:00",
+      "to_exclusive": "2026-07-26T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 133.86110006831586,
+      "captured_at_utc": "2026-10-06T02:15:57.577899+00:00",
+      "response_sha256": "cc8e87d34ea8c82d140b35a4ca329f61fdd9789f3c7d765ff075110d95631c7a",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1785024000&to=1785110399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1785024000_1785110400.json.gz",
+      "from": "2026-07-26T00:00:00+00:00",
+      "to_exclusive": "2026-07-27T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 150.7204999215901,
+      "captured_at_utc": "2026-10-06T02:15:57.996842+00:00",
+      "response_sha256": "8ddad58ceb95ef5374fb422f869d6ce51b192329445922a91c396e7a095621a7",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1785110400&to=1785196799",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1785110400_1785196800.json.gz",
+      "from": "2026-07-27T00:00:00+00:00",
+      "to_exclusive": "2026-07-28T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 114.39669993706048,
+      "captured_at_utc": "2026-10-06T02:15:58.361396+00:00",
+      "response_sha256": "e2f00d295d361a44f2d31f204720f16040a2869e99f80a84c61b150c80998c28",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1785196800&to=1785283199",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1785196800_1785283200.json.gz",
+      "from": "2026-07-28T00:00:00+00:00",
+      "to_exclusive": "2026-07-29T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 137.86890008486807,
+      "captured_at_utc": "2026-10-06T02:15:58.785016+00:00",
+      "response_sha256": "a5070620432f0076179adbf6d6c917cb088551210f373af783b3c9da68cbd52b",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1785283200&to=1785369599",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1785283200_1785369600.json.gz",
+      "from": "2026-07-29T00:00:00+00:00",
+      "to_exclusive": "2026-07-30T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 132.12389987893403,
+      "captured_at_utc": "2026-10-06T02:15:59.180613+00:00",
+      "response_sha256": "787b28b383eabd9dab02884d97fa93429279be6f639d95c0db54818ecfb031b7",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1785369600&to=1785455999",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1785369600_1785456000.json.gz",
+      "from": "2026-07-30T00:00:00+00:00",
+      "to_exclusive": "2026-07-31T00:00:00+00:00"
+    },
+    {
+      "http_status": 200,
+      "round_trip_ms": 120.25359994731843,
+      "captured_at_utc": "2026-10-06T02:15:59.569559+00:00",
+      "response_sha256": "a5711b6d4118eede07c5399024b9135bcc3866cb8a0c55befa3650b2234145c2",
+      "source": "https://futures.kraken.com/api/charts/v1/mark/PF_XBTUSD/1m?from=1785456000&to=1785542399",
+      "raw_file": "raw\\PF_XBTUSD\\mark\\1785456000_1785542400.json.gz",
+      "from": "2026-07-31T00:00:00+00:00",
+      "to_exclusive": "2026-08-01T00:00:00+00:00"
+    }
+  ]
+}

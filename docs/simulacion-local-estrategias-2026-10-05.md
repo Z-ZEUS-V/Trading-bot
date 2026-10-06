@@ -2,6 +2,8 @@
 
 Fecha: 5 de octubre de 2026. **Investigación, sin órdenes reales y sin llamadas a Astra.**
 
+**Actualización posterior:** el usuario flexibilizó los objetivos por operación. El diagnóstico y las comparaciones de TP menores/riesgo reducido están en `docs/diagnostico-objetivos-apalancamiento-2026-10-05.md`. Los resultados y parámetros de este documento se conservan como primera investigación, no como requisitos operativos vigentes.
+
 El usuario pide avanzar en la estrategia y mantener abierta una revisión posterior del exchange y los agentes. La monitorización continua deberá ser asequible. Hasta que el usuario indique lo contrario, no ejecutar llamadas a Astra de ningún nivel de razonamiento.
 
 ## Resultado principal

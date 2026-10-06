@@ -10,6 +10,8 @@ class Signal:
     available_at: int
     direction: int
     atr: float
+    stop_reference: float | None = None
+    profit_anchor: float | None = None
 
 
 def signals(hourly: dict[int, Candle], spec: dict, cutoff: int) -> dict[int, Signal]:

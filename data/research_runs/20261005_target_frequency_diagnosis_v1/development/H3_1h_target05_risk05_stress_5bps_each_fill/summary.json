@@ -1,0 +1,48 @@
+{
+  "status": "exploratory_only",
+  "strategy": "H3_breakout_1h",
+  "target_fraction": 0.005,
+  "risk_fraction": 0.005,
+  "slippage_each_fill": 0.0005,
+  "from": "2026-02-14T00:00:00+00:00",
+  "to_exclusive": "2026-06-01T00:00:00+00:00",
+  "initial_equity_usd": 50.0,
+  "final_equity_usd": 51.49353409596826,
+  "net_pnl_usd": 1.4935340959682577,
+  "return_fraction": 0.02987068191936526,
+  "trades": 88,
+  "win_rate": 0.48863636363636365,
+  "profit_factor": 1.1757459777416899,
+  "mean_trade_net_usd": 0.016971978363274284,
+  "worst_trade_net_usd": -0.23114203377280462,
+  "mean_entry_exposure": 0.2824042854399297,
+  "max_hourly_mark_drawdown_fraction": 0.034334999894599275,
+  "fees_usd": 1.28040725,
+  "funding_cashflow_usd": -0.0011586540318637784,
+  "funding_intrabar_bound_width_usd": 0.004707606165246329,
+  "fill_friction_usd_already_in_gross": 1.3064999999999993,
+  "same_hour_double_touches": 0,
+  "loss_budget_exceeded_trades": 0,
+  "net_target_achieved_trades": 37,
+  "by_symbol": {
+    "PF_XBTUSD": {
+      "trades": 66,
+      "net_pnl_usd": 1.2234625688061311
+    },
+    "PF_ETHUSD": {
+      "trades": 22,
+      "net_pnl_usd": 0.2700715271620059
+    }
+  },
+  "monthly_mark_pnl_usd": {
+    "2026-02": 0.5289174121843558,
+    "2026-03": 1.732697982702824,
+    "2026-04": 0.0498431984673573,
+    "2026-05": -0.8179244973862794
+  },
+  "skipped_signals": {
+    "wait_for_new_closed_signal_bar": 62
+  },
+  "promotion_allowed": false,
+  "ledger_residual_usd": 1.2079226507921703e-13
+}

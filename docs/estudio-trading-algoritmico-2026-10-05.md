@@ -1,5 +1,7 @@
 # Estudio aplicado de trading algorítmico: cuenta de 50 USD
 
+**Nota posterior del 6 de octubre de 2026:** las preferencias de objetivo, stop y apalancamiento registradas en este estudio fueron revisadas. Los criterios vigentes están en `docs/criterios-operativos-vigentes-2026-10-06.md`; los cálculos y propuestas siguientes se conservan como investigación histórica.
+
 Fecha: 5 de octubre de 2026. Primera revisión documental y ejercicios aplicados. Ninguna estrategia del proyecto tiene todavía rentabilidad verificada.
 
 **Continuación posterior a este estudio:** el siguiente paso solicitado ya produjo conciliación de funding y un primer replay H1/H2. Resultados, límites y tareas pendientes en [primera simulación local](simulacion-local-estrategias-2026-10-05.md). Las secciones siguientes conservan el protocolo y estado de la revisión previa. Astra queda sin llamadas hasta nueva indicación del usuario.

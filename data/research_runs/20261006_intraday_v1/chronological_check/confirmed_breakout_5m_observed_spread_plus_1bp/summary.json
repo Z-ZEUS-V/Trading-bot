@@ -1,0 +1,198 @@
+{
+  "window": "chronological_check",
+  "case": "confirmed_breakout_5m",
+  "cost": "observed_spread_plus_1bp",
+  "additional_adverse_fraction": 0.0001,
+  "summary": {
+    "status": "exploratory_only",
+    "strategy": "confirmed_breakout_5m",
+    "target_fraction": 0.005,
+    "risk_fraction": 0.0025,
+    "slippage_each_fill": 0,
+    "from": "2026-06-01T00:00:00+00:00",
+    "to_exclusive": "2026-08-01T00:00:00+00:00",
+    "mark_observation_seconds": 60,
+    "execution_cost_model": "causal_callback",
+    "initial_equity_usd": 50.0,
+    "final_equity_usd": 33.58491004985304,
+    "net_pnl_usd": -16.415089950146957,
+    "return_fraction": -0.3283017990029391,
+    "trades": 609,
+    "win_rate": 0.2742200328407225,
+    "profit_factor": 0.5082604579616663,
+    "mean_trade_net_usd": -0.026954170689896025,
+    "worst_trade_net_usd": -0.11295762935596242,
+    "mean_entry_exposure": 0.6099520086738683,
+    "max_hourly_mark_drawdown_fraction": 0.33106512945445915,
+    "fees_usd": 15.3499773,
+    "funding_cashflow_usd": -0.007712650146718299,
+    "funding_intrabar_bound_width_usd": 0.0014928773540553704,
+    "fill_friction_usd_already_in_gross": 4.441399999999967,
+    "same_hour_double_touches": 0,
+    "loss_budget_exceeded_trades": 0,
+    "net_target_achieved_trades": 50,
+    "by_symbol": {
+      "PF_XBTUSD": {
+        "trades": 414,
+        "net_pnl_usd": -10.798875924304323
+      },
+      "PF_ETHUSD": {
+        "trades": 195,
+        "net_pnl_usd": -5.616214025842358
+      }
+    },
+    "monthly_mark_pnl_usd": {
+      "2026-06": -7.42529326039277,
+      "2026-07": -8.989796689754186
+    },
+    "skipped_signals": {
+      "wait_for_new_closed_signal_bar": 11,
+      "invalid_stop_geometry": 1
+    },
+    "promotion_allowed": false,
+    "ledger_residual_usd": -2.7711166694643907e-13
+  },
+  "stats": {
+    "trades": 609,
+    "calendar_days": 61.0,
+    "trades_per_calendar_day": 9.98360655737705,
+    "gross_at_reference_prices_usd": 3.3840000000000057,
+    "friction_already_in_gross_usd": 4.441399999999967,
+    "fees_usd": 15.3499773,
+    "funding_usd": -0.007712650146718299,
+    "net_pnl_usd": -16.41508995014668,
+    "average_win_usd": 0.10159632220801906,
+    "average_loss_usd": 0.07552415330064675,
+    "exposure_over_equity": {
+      "count": 609,
+      "mean": 0.6099520086738683,
+      "median": 0.5718869013289368,
+      "min": 0.12302235282295847,
+      "max": 1.8347891508005363
+    },
+    "initial_margin_fraction_equity": {
+      "count": 609,
+      "mean": 0.06099520086738684,
+      "median": 0.05718869013289368,
+      "min": 0.012302235282295846,
+      "max": 0.18347891508005365
+    },
+    "planned_loss_including_funding_budget_fraction": {
+      "count": 609,
+      "mean": 0.0022816072123388086,
+      "median": 0.002338358296022684,
+      "min": 0.0014132476217516626,
+      "max": 0.0024985063304660935
+    },
+    "initial_stop_price_distance_fraction": {
+      "count": 609,
+      "mean": 0.0028274789638859463,
+      "median": 0.002335716523770188,
+      "min": 9.47852324607826e-05,
+      "max": 0.01569240387621126
+    },
+    "holding_hours_upper": {
+      "count": 609,
+      "mean": 0.596223316912972,
+      "median": 0.6166666666666667,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "exit_reasons": {
+      "stop_intrabar": 347,
+      "time_exit": 210,
+      "target_intrabar": 50,
+      "stop_at_open": 1,
+      "window_end": 1
+    },
+    "assets": {
+      "PF_XBTUSD": 414,
+      "PF_ETHUSD": 195
+    },
+    "max_entries_per_utc_day": 15,
+    "days_with_entries": 61,
+    "days_at_least_50_entries": 0,
+    "sizing_limits": {
+      "stop_risk": 609
+    },
+    "maximum_entry_notional_usd": 63.301
+  },
+  "uncertainty": {
+    "calendar_days": 61,
+    "daily_returns": [
+      -0.009814312928310365,
+      0.00844372194906895,
+      -0.003651798122433658,
+      -0.005055263628460982,
+      -0.001388505739200907,
+      -0.0039209402930499015,
+      0.00045229646838151893,
+      -0.008686734338517965,
+      -0.010951697734266741,
+      -0.004831436531731792,
+      -0.01062122911832275,
+      -0.004242405686234685,
+      -0.015144615426095132,
+      -0.006547844611389242,
+      -0.00028683428622811036,
+      -0.004145055081519522,
+      -0.012405529596225429,
+      0.009875808418447596,
+      -0.010529970634520769,
+      -0.004607087119953723,
+      -0.0013792146940543315,
+      -0.006844968968315102,
+      -0.009821215144383943,
+      -0.0022125143905195044,
+      0.0042051642154763424,
+      -0.0024355173523130658,
+      -0.016489759540418314,
+      -0.0128207162551508,
+      -0.011919355993184721,
+      -0.0019772749518909283,
+      -0.0024357084092382353,
+      -0.0024788536560552688,
+      -0.009743165337809945,
+      -0.009773921030126753,
+      -0.006727219573052556,
+      -0.013084948596762902,
+      -0.014052963403907826,
+      -0.012166614393406716,
+      -0.0030111141993349744,
+      -0.012750136441352478,
+      -0.009967085426289213,
+      0.0010618110873308328,
+      -0.008791858345730819,
+      0.0030191880341725597,
+      -0.007565495338788142,
+      -0.0025726413856874686,
+      -0.009714875752473762,
+      -0.009969105796272193,
+      -0.015322189792937979,
+      0.0006626468651493855,
+      -0.008647630461818157,
+      -0.0075920326353468015,
+      -0.0069614886572757495,
+      0.0029742131842431796,
+      -0.018345368790567917,
+      -0.003646407166028487,
+      -0.012572531006183829,
+      -0.01479844046722445,
+      -0.004321180349822984,
+      -0.014000532368507401,
+      -0.002499528514633531
+    ],
+    "block_days": 7,
+    "resamples": 2000,
+    "seed": 610161,
+    "same_length_return_percentile_2_5": -0.38142426070636193,
+    "same_length_return_percentile_97_5": -0.27169432592118686,
+    "bootstrap_positive_fraction_not_probability_of_future_profit": 0.0
+  },
+  "failed_screens": [
+    "net",
+    "profit_factor",
+    "drawdown",
+    "uncertainty"
+  ]
+}

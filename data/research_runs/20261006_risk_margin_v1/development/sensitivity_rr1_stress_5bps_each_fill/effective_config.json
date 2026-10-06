@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "purpose": "offline_research_only",
+  "registered_on": "2026-10-05",
+  "astra_enabled": false,
+  "live_trading_enabled": false,
+  "dataset": "data/market_data/datasets/20261002T010411Z",
+  "funding_snapshot": "data/market_data/funding_rates/20261005T204909Z",
+  "funding_timing_snapshot": "data/market_data/funding_timing/20261005T210921Z",
+  "catalog": "data/market_data/instruments/20261006T015156Z/response.json",
+  "symbols_priority": [
+    "PF_XBTUSD",
+    "PF_ETHUSD"
+  ],
+  "initial_equity_usd": 50.0,
+  "risk_fraction": 0.005,
+  "funding_reserve_fraction_of_risk": 0.1,
+  "max_exposure_over_equity": 10.0,
+  "minimum_free_equity_fraction": 0.6,
+  "margin_region": "europa",
+  "margin_category": "retail",
+  "taker_fee": 0.0005,
+  "min_quantity": {
+    "PF_XBTUSD": 0.0001,
+    "PF_ETHUSD": 0.001
+  },
+  "cost_scenarios": [
+    {
+      "name": "base_2bps_each_fill",
+      "slippage_each_fill": 0.0002
+    },
+    {
+      "name": "stress_5bps_each_fill",
+      "slippage_each_fill": 0.0005
+    }
+  ],
+  "strategies": [
+    {
+      "id": "H1_breakout_4h",
+      "kind": "breakout",
+      "bar_hours": 4,
+      "lookback": 20,
+      "atr_period": 14,
+      "stop_atr": 2.0,
+      "max_hold_bars": 48
+    },
+    {
+      "id": "H2_momentum_1d",
+      "kind": "momentum",
+      "bar_hours": 24,
+      "lookback": 20,
+      "atr_period": 14,
+      "stop_atr": 2.0,
+      "max_hold_bars": 20
+    }
+  ],
+  "account_profit_targets": [
+    0.05,
+    0.1
+  ],
+  "windows": [
+    {
+      "id": "development",
+      "from": "2026-02-14T00:00:00+00:00",
+      "to_exclusive": "2026-06-01T00:00:00+00:00"
+    },
+    {
+      "id": "chronological_validation",
+      "from": "2026-06-01T00:00:00+00:00",
+      "to_exclusive": "2026-08-01T00:00:00+00:00"
+    }
+  ],
+  "reserved_not_evaluated": {
+    "from": "2026-08-01T00:00:00+00:00",
+    "to_exclusive": "2026-10-02T01:00:00+00:00"
+  },
+  "assumptions": [
+    "One position across all symbols; USD collateral, no FX conversion or collateral haircut.",
+    "Current lot, tick, margin and fee rules are applied as a present-day feasibility replay; not point-in-time historical rules.",
+    "Slippage includes spread and adverse execution; both scenarios are hypotheses, not calibrated fills.",
+    "Hourly last-price stop/target trigger, market exits, adverse tick rounding; same-hour double touch uses stop first.",
+    "Funding absolute USD per base unit per hour; historical timestamp treated as start of accrual period, corroborated by ticker capture.",
+    "Intrabar exit funding uses full-hour debit or zero credit as a conservative bound, with uncertainty recorded.",
+    "Hourly risk-budget stop can tighten but never widen; no promise of a hard actual loss cap.",
+    "Missing funding during an evaluation window aborts that run; no zero filling or silent deletion of trades.",
+    "Parameters were fixed before first strategy PnL run; all eight variants are reported, without tuning on validation."
+  ],
+  "maximum_nominal_per_allocated_margin": 25.0,
+  "maximum_allocated_margin_fraction": 0.4,
+  "minimum_net_target_to_budgeted_loss": 1.0
+}
