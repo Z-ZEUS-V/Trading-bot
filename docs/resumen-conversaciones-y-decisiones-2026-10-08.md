@@ -24,7 +24,7 @@
 - Las [investigaciones de riesgo y margen](investigacion-riesgo-margen-2026-10-06.md) y [señales intradía](investigacion-intradia-2026-10-06.md) tampoco dieron evidencia suficiente para operar; las 16 evaluaciones intradía del segundo estudio perdieron tras costes.
 - Desde el 5 de octubre UTC se comparan A y B con días públicos completos de Kraken. Al cierre del 7 de octubre UTC hay **3 días prospectivos**, **15 operaciones simuladas** en A y **5** en B. La muestra está por debajo del mínimo de 30 días y 100 operaciones por variante definido por el seguimiento; no permite elegir estrategia.
 - Al revisar esos tres días, B registró en ETH una operación simulada el 7 de octubre UTC con pérdida de **30,43 USD** sobre una cuenta de simulación de 10.000 USD, frente a un riesgo previsto de **25 USD**. El indicador `risk_budget_breaches` marcó 1. Fue una salida por stop; las comisiones contribuyeron a superar el presupuesto previsto. No hubo órdenes reales.
-- Los manifiestos diarios del 3 al 7 de octubre UTC están completos, y las capturas del 4 al 7 revisadas no mostraron huecos en las series. El informe prospectivo se conserva localmente en `data/backtests/prospective_reviews/through_2026-10-07.json`; aún faltan financiación y fills reales.
+- Los manifiestos diarios del 3 al 7 de octubre UTC están completos, y las capturas del 4 al 7 revisadas no mostraron huecos en las series. El informe prospectivo `through_2026-10-07.json` permanece en la carpeta de investigación local y no forma parte de esta copia de GitHub; aún faltan financiación y fills reales.
 
 ## Próxima decisión
 
